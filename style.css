@@ -1367,6 +1367,7 @@ nav .nav-button:hover {
 
 /* =========================================================
    PRODUCTS
+   BACKGROUND MORE VISIBLE
 ========================================================= */
 
 .products {
@@ -1380,8 +1381,8 @@ nav .nav-button:hover {
 
     background:
         linear-gradient(
-            rgba(245,248,246,.82),
-            rgba(245,248,246,.82)
+            rgba(245,248,246,.62),
+            rgba(245,248,246,.62)
         ),
         url("products-bg.png");
 
@@ -1639,6 +1640,7 @@ nav .nav-button:hover {
 
 /* =========================================================
    ABOUT
+   BACKGROUND MORE VISIBLE
 ========================================================= */
 
 .about {
@@ -1654,8 +1656,8 @@ nav .nav-button:hover {
 
     background:
         linear-gradient(
-            rgba(3,18,10,.70),
-            rgba(6,35,20,.72)
+            rgba(3,18,10,.55),
+            rgba(6,35,20,.58)
         ),
         url("about-bg.png");
 
