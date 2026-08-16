@@ -42,28 +42,68 @@ body {
     border-bottom: 1px solid #245f3b;
 }
 
+
+/* LOGO + IMAGE */
+
 .logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
     font-size: 24px;
+
     font-weight: 900;
+
     letter-spacing: 2px;
+}
+
+.logo img {
+    width: 48px;
+    height: 48px;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+
+    background: white;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo-text {
+    line-height: 1.1;
 }
 
 .logo span {
     display: block;
+
     font-size: 9px;
+
     letter-spacing: 4px;
+
     color: #83c99b;
+
+    margin-top: 4px;
 }
+
+
+/* NAV LINKS */
 
 nav {
     display: flex;
+
     gap: 35px;
 }
 
 nav a {
     color: white;
+
     text-decoration: none;
+
     font-size: 15px;
+
     transition: 0.3s;
 }
 
@@ -80,6 +120,7 @@ nav a:hover {
     min-height: 90vh;
 
     display: flex;
+
     align-items: center;
 
     padding: 100px 10%;
@@ -94,7 +135,9 @@ nav a:hover {
         url("hero.jpg");
 
     background-size: cover;
+
     background-position: center;
+
     background-repeat: no-repeat;
 
     color: white;
@@ -106,14 +149,19 @@ nav a:hover {
 
 .small-title {
     letter-spacing: 5px;
+
     font-size: 13px;
+
     color: #63d486;
+
     margin-bottom: 20px;
 }
 
 .hero h1 {
     font-size: clamp(45px, 7vw, 85px);
+
     line-height: 1.1;
+
     margin-bottom: 30px;
 }
 
@@ -123,21 +171,32 @@ nav a:hover {
 
 .hero p {
     max-width: 600px;
+
     color: #e0ebe4;
+
     font-size: 18px;
 }
 
 .hero-buttons {
     margin-top: 40px;
+
     display: flex;
+
     gap: 15px;
 }
 
+
+/* ================================
+   BUTTONS
+================================ */
+
 .btn {
     display: inline-block;
+
     padding: 14px 30px;
 
     text-decoration: none;
+
     font-weight: bold;
 
     border-radius: 4px;
@@ -147,21 +206,25 @@ nav a:hover {
 
 .primary {
     background: #32ad5b;
+
     color: white;
 }
 
 .primary:hover {
     background: #43ca70;
+
     transform: translateY(-2px);
 }
 
 .secondary {
     border: 1px solid #62d486;
+
     color: white;
 }
 
 .secondary:hover {
     background: #32ad5b;
+
     border-color: #32ad5b;
 }
 
@@ -176,19 +239,24 @@ section {
 
 .section-title {
     text-align: center;
+
     margin-bottom: 60px;
 }
 
 .section-title p,
 .section-label {
     font-size: 12px;
+
     letter-spacing: 4px;
+
     color: #329457;
+
     margin-bottom: 10px;
 }
 
 .section-title h2 {
     font-size: 48px;
+
     color: #102219;
 }
 
@@ -210,7 +278,9 @@ section {
         url("products-bg.png");
 
     background-size: cover;
+
     background-position: center;
+
     background-attachment: fixed;
 }
 
@@ -249,17 +319,21 @@ section {
 
 .product-icon {
     font-size: 35px;
+
     margin-bottom: 25px;
+
     color: #32ad5b;
 }
 
 .product-card h3 {
     font-size: 24px;
+
     margin-bottom: 12px;
 }
 
 .product-card p {
     color: #718078;
+
     margin-bottom: 30px;
 }
 
@@ -269,8 +343,6 @@ section {
     text-decoration: none;
 
     font-weight: bold;
-
-    transition: 0.3s;
 }
 
 .product-card a:hover {
@@ -279,7 +351,7 @@ section {
 
 
 /* ================================
-   ABOUT / من نحن
+   ABOUT
 ================================ */
 
 .about {
@@ -291,7 +363,9 @@ section {
         url("about-bg.png");
 
     background-size: cover;
+
     background-position: center;
+
     background-attachment: fixed;
 
     color: white;
@@ -384,7 +458,9 @@ section {
     border-top: 3px solid #32ad5b;
 
     border-left: 1px solid #e0e8e2;
+
     border-right: 1px solid #e0e8e2;
+
     border-bottom: 1px solid #e0e8e2;
 
     transition: 0.3s;
@@ -439,16 +515,19 @@ section {
 
 .cta h2 {
     font-size: 45px;
+
     color: white;
 }
 
 .light {
     background: white;
+
     color: #071b10;
 }
 
 .light:hover {
     background: #52d278;
+
     color: white;
 }
 
@@ -639,6 +718,27 @@ footer p {
 
     section {
         padding: 80px 6%;
+    }
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .logo {
+        gap: 8px;
+
+        font-size: 19px;
+    }
+
+    .logo img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .logo span {
+        font-size: 7px;
+
+        letter-spacing: 3px;
     }
 
     .hero h1 {
