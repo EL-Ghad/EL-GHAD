@@ -15,15 +15,13 @@ body {
     line-height: 1.7;
 }
 
-
-/* ================================
+/* =========================
    NAVBAR
-================================ */
+========================= */
 
 .navbar {
     height: 80px;
     padding: 0 8%;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,7 +50,7 @@ body {
     width: 48px;
     height: 48px;
 
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 6px;
 }
 
@@ -60,7 +58,7 @@ body {
     line-height: 1.1;
 }
 
-.logo span {
+.logo-text span {
     display: block;
 
     font-size: 9px;
@@ -78,7 +76,6 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-
     font-size: 15px;
 
     transition: 0.3s;
@@ -88,10 +85,9 @@ nav a:hover {
     color: #52d278;
 }
 
-
-/* ================================
+/* =========================
    HERO
-================================ */
+========================= */
 
 .hero {
     min-height: 90vh;
@@ -124,17 +120,13 @@ nav a:hover {
 .small-title {
     letter-spacing: 5px;
     font-size: 13px;
-
     color: #63d486;
-
     margin-bottom: 20px;
 }
 
 .hero h1 {
     font-size: clamp(45px, 7vw, 85px);
-
     line-height: 1.1;
-
     margin-bottom: 30px;
 }
 
@@ -144,9 +136,7 @@ nav a:hover {
 
 .hero p {
     max-width: 600px;
-
     color: #e0ebe4;
-
     font-size: 18px;
 }
 
@@ -157,10 +147,9 @@ nav a:hover {
     gap: 15px;
 }
 
-
-/* ================================
+/* =========================
    BUTTONS
-================================ */
+========================= */
 
 .btn {
     display: inline-block;
@@ -168,7 +157,6 @@ nav a:hover {
     padding: 14px 30px;
 
     text-decoration: none;
-
     font-weight: bold;
 
     border-radius: 4px;
@@ -196,10 +184,9 @@ nav a:hover {
     border-color: #32ad5b;
 }
 
-
-/* ================================
+/* =========================
    SECTIONS
-================================ */
+========================= */
 
 section {
     padding: 110px 8%;
@@ -230,10 +217,9 @@ section {
     color: #718078;
 }
 
-
-/* ================================
+/* =========================
    PRODUCTS
-================================ */
+========================= */
 
 .products {
     background:
@@ -281,9 +267,7 @@ section {
 
 .product-icon {
     font-size: 35px;
-
     margin-bottom: 25px;
-
     color: #32ad5b;
 }
 
@@ -299,9 +283,7 @@ section {
 
 .product-card a {
     color: #198143;
-
     text-decoration: none;
-
     font-weight: bold;
 }
 
@@ -309,10 +291,9 @@ section {
     color: #32ad5b;
 }
 
-
-/* ================================
+/* =========================
    ABOUT
-================================ */
+========================= */
 
 .about {
     background:
@@ -339,11 +320,8 @@ section {
 
 .about h2 {
     font-size: 55px;
-
     line-height: 1.15;
-
     margin-bottom: 25px;
-
     color: white;
 }
 
@@ -361,9 +339,7 @@ section {
 
 .about-box {
     display: flex;
-
     flex-direction: column;
-
     gap: 2px;
 }
 
@@ -373,7 +349,6 @@ section {
     padding: 30px;
 
     display: flex;
-
     justify-content: space-between;
 
     border-right: 3px solid #32ad5b;
@@ -390,10 +365,9 @@ section {
     color: #52d278;
 }
 
-
-/* ================================
+/* =========================
    SERVICES
-================================ */
+========================= */
 
 .services {
     background: white;
@@ -441,10 +415,9 @@ section {
     color: #718078;
 }
 
-
-/* ================================
+/* =========================
    CTA
-================================ */
+========================= */
 
 .cta {
     background:
@@ -459,7 +432,6 @@ section {
     display: flex;
 
     justify-content: space-between;
-
     align-items: center;
 }
 
@@ -482,10 +454,9 @@ section {
     color: white;
 }
 
-
-/* ================================
+/* =========================
    CONTACT
-================================ */
+========================= */
 
 .contact {
     background: #f3f7f4;
@@ -510,13 +481,17 @@ section {
 .contact-info p {
     color: #718078;
 
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
+
+/* روابط التواصل */
 
 .contact-info a {
     color: #329457;
 
     text-decoration: none;
+
+    font-weight: 600;
 
     transition: 0.3s;
 }
@@ -526,6 +501,34 @@ section {
 
     text-decoration: underline;
 }
+
+/* الخريطة */
+
+.contact-info a[href*="maps"] {
+    color: #329457;
+}
+
+/* رقم الهاتف */
+
+.contact-info a[href^="tel"] {
+    color: #329457;
+}
+
+/* واتساب */
+
+.contact-info a[href*="wa.me"] {
+    color: #25a55a;
+}
+
+/* البريد */
+
+.contact-info a[href^="mailto"] {
+    color: #329457;
+}
+
+/* =========================
+   FORM
+========================= */
 
 form {
     display: flex;
@@ -588,10 +591,9 @@ form button:hover {
     background: #32ad5b;
 }
 
-
-/* ================================
+/* =========================
    FOOTER
-================================ */
+========================= */
 
 footer {
     background: #041109;
@@ -609,7 +611,6 @@ footer {
 
 .footer-logo {
     font-size: 25px;
-
     font-weight: bold;
 }
 
@@ -627,10 +628,9 @@ footer p {
     color: #718078;
 }
 
-
-/* ================================
+/* =========================
    RESPONSIVE
-================================ */
+========================= */
 
 @media (max-width: 900px) {
 
@@ -647,7 +647,6 @@ footer p {
 
     .hero {
         min-height: 80vh;
-
         padding: 80px 7%;
     }
 
@@ -657,25 +656,16 @@ footer p {
 
     .cta {
         flex-direction: column;
-
         align-items: flex-start;
-
         gap: 30px;
     }
 
     footer {
         flex-direction: column;
-
         gap: 20px;
-
         align-items: flex-start;
     }
 }
-
-
-/* ================================
-   SMALL PHONES
-================================ */
 
 @media (max-width: 500px) {
 
@@ -689,7 +679,6 @@ footer p {
 
     .logo {
         gap: 8px;
-
         font-size: 19px;
     }
 
@@ -698,9 +687,8 @@ footer p {
         height: 42px;
     }
 
-    .logo span {
+    .logo-text span {
         font-size: 7px;
-
         letter-spacing: 3px;
     }
 
@@ -714,7 +702,6 @@ footer p {
 
     .hero-buttons {
         flex-direction: column;
-
         align-items: stretch;
     }
 
@@ -732,5 +719,9 @@ footer p {
 
     .cta h2 {
         font-size: 35px;
+    }
+
+    .contact-info {
+        text-align: right;
     }
 }
