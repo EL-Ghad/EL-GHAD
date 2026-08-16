@@ -21,6 +21,7 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 button,
@@ -31,7 +32,7 @@ textarea {
 
 
 /* =====================================================
-   LOADER
+   LOADING SCREEN
 ===================================================== */
 
 #loader {
@@ -51,9 +52,7 @@ textarea {
             #020804
         );
 
-    transition:
-        opacity .8s ease,
-        visibility .8s ease;
+    transition: opacity .8s ease, visibility .8s ease;
 }
 
 #loader.hide {
@@ -70,8 +69,7 @@ textarea {
     height: 105px;
     object-fit: contain;
 
-    animation:
-        loaderFloat 2s ease-in-out infinite;
+    animation: loaderFloat 2s ease-in-out infinite;
 }
 
 .loader-box h2 {
@@ -106,14 +104,11 @@ textarea {
 
     background: #52d278;
 
-    animation:
-        loaderMove 1.2s infinite ease-in-out;
+    animation: loaderMove 1.2s infinite ease-in-out;
 }
 
 @keyframes loaderFloat {
-
-    0%,
-    100% {
+    0%, 100% {
         transform: translateY(0);
     }
 
@@ -123,7 +118,6 @@ textarea {
 }
 
 @keyframes loaderMove {
-
     0% {
         transform: translateX(-200%);
     }
@@ -143,7 +137,7 @@ textarea {
     top: 0;
     z-index: 1000;
 
-    background: rgba(3, 17, 9, .94);
+    background: rgba(3, 17, 9, .95);
 
     backdrop-filter: blur(18px);
 
@@ -155,6 +149,7 @@ textarea {
 .nav-container {
     width: 88%;
     max-width: 1450px;
+
     min-height: 82px;
 
     margin: auto;
@@ -175,12 +170,14 @@ textarea {
 .logo img {
     width: 48px;
     height: 48px;
+
     object-fit: contain;
 }
 
 .logo div {
     display: flex;
     flex-direction: column;
+
     line-height: 1;
 }
 
@@ -191,8 +188,10 @@ textarea {
 
 .logo span {
     color: #52d278;
+
     font-size: 8px;
     letter-spacing: 4px;
+
     margin-top: 5px;
 }
 
@@ -337,7 +336,9 @@ nav .nav-button:hover {
 }
 
 
-/* HERO TEXT */
+/* =====================================================
+   HERO TEXT
+===================================================== */
 
 .hero-text {
     max-width: 700px;
@@ -366,8 +367,7 @@ nav .nav-button:hover {
 }
 
 .hero-text h1 {
-    font-size:
-        clamp(48px, 6vw, 82px);
+    font-size: clamp(48px, 6vw, 82px);
 
     line-height: 1.08;
 
@@ -378,6 +378,7 @@ nav .nav-button:hover {
 
 .hero-text h1 strong {
     color: #52d278;
+
     font-weight: 700;
 }
 
@@ -394,7 +395,9 @@ nav .nav-button:hover {
 }
 
 
-/* HERO BUTTONS */
+/* =====================================================
+   HERO BUTTONS
+===================================================== */
 
 .hero-buttons {
     display: flex;
@@ -430,6 +433,7 @@ nav .nav-button:hover {
 
 .btn-main:hover {
     background: #42c96d;
+
     transform: translateY(-3px);
 }
 
@@ -451,7 +455,9 @@ nav .nav-button:hover {
 }
 
 
-/* FEATURES */
+/* =====================================================
+   HERO FEATURES
+===================================================== */
 
 .hero-features {
     display: flex;
@@ -479,7 +485,9 @@ nav .nav-button:hover {
 }
 
 
-/* HERO CARD */
+/* =====================================================
+   HERO CARD
+===================================================== */
 
 .hero-card-area {
     position: relative;
@@ -654,7 +662,9 @@ nav .nav-button:hover {
 }
 
 
-/* SCROLL */
+/* =====================================================
+   SCROLL
+===================================================== */
 
 .scroll-down {
     position: absolute;
@@ -690,8 +700,6 @@ nav .nav-button:hover {
 .quick-info {
     position: relative;
     z-index: 5;
-
-    margin-top: -1px;
 
     background: white;
 
@@ -773,14 +781,8 @@ nav .nav-button:hover {
 
 
 /* =====================================================
-   GENERAL SECTIONS
+   SECTION HEADING
 ===================================================== */
-
-section.products,
-section.services,
-section.contact {
-    padding: 120px 8%;
-}
 
 .section-heading {
     text-align: center;
@@ -818,7 +820,22 @@ section.contact {
 ===================================================== */
 
 .products {
-    background: #f5f8f6;
+    position: relative;
+
+    padding: 120px 8%;
+
+    background:
+        linear-gradient(
+            rgba(245,248,246,.90),
+            rgba(245,248,246,.90)
+        ),
+        url("products-bg.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
 }
 
 .products-grid {
@@ -842,7 +859,8 @@ section.contact {
 
     padding: 35px;
 
-    background: white;
+    background:
+        rgba(255,255,255,.94);
 
     border:
         1px solid #e1e9e3;
@@ -876,7 +894,7 @@ section.contact {
 
     box-shadow:
         0 20px 45px
-        rgba(20,70,40,.08);
+        rgba(20,70,40,.12);
 }
 
 .product-card:hover::before {
@@ -934,16 +952,24 @@ section.contact {
 ===================================================== */
 
 .about {
-    background:
-        linear-gradient(
-            120deg,
-            #04130a,
-            #0a3020
-        );
+    position: relative;
+
+    padding: 120px 8%;
 
     color: white;
 
-    padding: 120px 8%;
+    background:
+        linear-gradient(
+            rgba(3,19,10,.88),
+            rgba(10,48,32,.92)
+        ),
+        url("about-bg.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
 }
 
 .about-container {
@@ -1000,7 +1026,8 @@ section.contact {
 
     padding: 14px 25px;
 
-    border: 1px solid #52d278;
+    border:
+        1px solid #52d278;
 
     color: white;
 
@@ -1045,6 +1072,8 @@ section.contact {
 ===================================================== */
 
 .services {
+    padding: 120px 8%;
+
     background: white;
 }
 
@@ -1103,6 +1132,8 @@ section.contact {
 ===================================================== */
 
 .contact {
+    padding: 120px 8%;
+
     background: #f5f8f6;
 }
 
@@ -1114,6 +1145,7 @@ section.contact {
 
     display: grid;
 
+    /* النموذج شمال — معلومات التواصل يمين */
     grid-template-columns:
         1fr
         1fr;
@@ -1123,9 +1155,21 @@ section.contact {
     direction: ltr;
 }
 
+
+/* FORM LEFT */
+
 .contact-container form {
     direction: rtl;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
 }
+
+
+/* INFO RIGHT */
 
 .contact-info {
     direction: rtl;
@@ -1184,13 +1228,8 @@ section.contact {
     color: #32ad5b;
 }
 
-form {
-    display: flex;
 
-    flex-direction: column;
-
-    gap: 13px;
-}
+/* FORM INPUTS */
 
 form input,
 form textarea {
@@ -1206,11 +1245,17 @@ form textarea {
     outline: none;
 
     color: #142019;
+
+    transition: .3s;
 }
 
 form input:focus,
 form textarea:focus {
     border-color: #32ad5b;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(50,173,91,.08);
 }
 
 form textarea {
@@ -1355,7 +1400,7 @@ footer {
 
 
 /* =====================================================
-   RESPONSIVE
+   RESPONSIVE - TABLET
 ===================================================== */
 
 @media (max-width: 1000px) {
@@ -1419,6 +1464,10 @@ footer {
     }
 }
 
+
+/* =====================================================
+   RESPONSIVE - MOBILE
+===================================================== */
 
 @media (max-width: 650px) {
 
@@ -1488,6 +1537,13 @@ footer {
     .products-grid,
     .services-grid {
         grid-template-columns: 1fr;
+    }
+
+    .products,
+    .about,
+    .services,
+    .contact {
+        padding: 80px 6%;
     }
 
     .section-heading h2 {
