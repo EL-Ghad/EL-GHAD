@@ -16,9 +16,7 @@ body {
 }
 
 
-/* =========================
-   NAVBAR
-========================= */
+/* NAVBAR */
 
 .navbar {
     height: 80px;
@@ -67,6 +65,7 @@ body {
     letter-spacing: 4px;
 
     color: #83c99b;
+
     margin-top: 4px;
 }
 
@@ -89,9 +88,7 @@ nav a:hover {
 }
 
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero {
     min-height: 90vh;
@@ -159,9 +156,7 @@ nav a:hover {
 }
 
 
-/* =========================
-   BUTTONS
-========================= */
+/* BUTTONS */
 
 .btn {
     display: inline-block;
@@ -190,18 +185,18 @@ nav a:hover {
 
 .secondary {
     border: 1px solid #62d486;
+
     color: white;
 }
 
 .secondary:hover {
     background: #32ad5b;
+
     border-color: #32ad5b;
 }
 
 
-/* =========================
-   SECTIONS
-========================= */
+/* SECTIONS */
 
 section {
     padding: 110px 8%;
@@ -235,9 +230,7 @@ section {
 }
 
 
-/* =========================
-   PRODUCTS
-========================= */
+/* PRODUCTS */
 
 .products {
     background:
@@ -313,14 +306,8 @@ section {
     font-weight: bold;
 }
 
-.product-card a:hover {
-    color: #32ad5b;
-}
 
-
-/* =========================
-   ABOUT
-========================= */
+/* ABOUT */
 
 .about {
     background:
@@ -391,10 +378,6 @@ section {
     transition: 0.3s;
 }
 
-.about-box div:hover {
-    background: rgba(22, 74, 42, 0.95);
-}
-
 .about-box strong {
     font-size: 30px;
 
@@ -402,9 +385,7 @@ section {
 }
 
 
-/* =========================
-   SERVICES
-========================= */
+/* SERVICES */
 
 .services {
     background: white;
@@ -454,9 +435,7 @@ section {
 }
 
 
-/* =========================
-   CTA
-========================= */
+/* CTA */
 
 .cta {
     background:
@@ -498,9 +477,7 @@ section {
 }
 
 
-/* =========================
-   CONTACT
-========================= */
+/* CONTACT */
 
 .contact {
     background: #f3f7f4;
@@ -525,17 +502,13 @@ section {
 .contact-info p {
     color: #718078;
 
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .contact-info a {
     color: #329457;
 
     text-decoration: none;
-
-    font-weight: 600;
-
-    transition: 0.3s;
 }
 
 .contact-info a:hover {
@@ -545,9 +518,7 @@ section {
 }
 
 
-/* =========================
-   CONTACT FORM
-========================= */
+/* FORM */
 
 form {
     display: flex;
@@ -570,16 +541,11 @@ textarea {
     font-family: inherit;
 
     outline: none;
-
-    transition: 0.3s;
 }
 
 input:focus,
 textarea:focus {
     border-color: #32ad5b;
-
-    box-shadow:
-        0 0 0 3px rgba(50, 173, 91, 0.10);
 }
 
 textarea {
@@ -611,9 +577,7 @@ form button:hover {
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer {
     background: #041109;
@@ -650,9 +614,7 @@ footer p {
 }
 
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* RESPONSIVE */
 
 @media (max-width: 900px) {
 
@@ -694,10 +656,6 @@ footer p {
     }
 }
 
-
-/* =========================
-   MOBILE
-========================= */
 
 @media (max-width: 500px) {
 
