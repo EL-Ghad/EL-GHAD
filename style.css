@@ -16,82 +16,187 @@ body {
 }
 
 
-/* NAVBAR */
+/* ==============================
+   PREMIUM NAVBAR
+============================== */
 
 .navbar {
-    height: 80px;
-    padding: 0 8%;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    background: #071b10;
-    color: white;
-
     position: sticky;
     top: 0;
     z-index: 1000;
 
-    border-bottom: 1px solid #245f3b;
+    height: 86px;
+
+    background: rgba(4, 20, 11, 0.96);
+
+    backdrop-filter: blur(14px);
+
+    border-bottom: 1px solid rgba(82, 210, 120, 0.18);
 }
 
-.logo {
+.navbar-container {
+    width: 84%;
+    max-width: 1400px;
+
+    height: 100%;
+
+    margin: auto;
+
     display: flex;
     align-items: center;
-    gap: 12px;
-
-    font-size: 24px;
-    font-weight: 900;
-    letter-spacing: 2px;
-
-    text-decoration: none;
-    color: inherit;
+    justify-content: space-between;
 }
 
-.logo img {
-    width: 48px;
-    height: 48px;
+
+/* BRAND */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    text-decoration: none;
+
+    color: white;
+}
+
+.brand img {
+    width: 49px;
+    height: 49px;
 
     object-fit: contain;
-    border-radius: 6px;
+
+    border-radius: 8px;
 }
 
-.logo-text {
-    line-height: 1.1;
+.brand-name {
+    display: flex;
+    flex-direction: column;
+
+    line-height: 1;
 }
 
-.logo-text span {
-    display: block;
+.brand-name strong {
+    font-size: 22px;
 
-    font-size: 9px;
+    letter-spacing: 2px;
+
+    color: #ffffff;
+}
+
+.brand-name span {
+    margin-top: 5px;
+
+    font-size: 8px;
+
     letter-spacing: 4px;
 
-    color: #83c99b;
-
-    margin-top: 4px;
-}
-
-nav {
-    display: flex;
-    gap: 35px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-
-    font-size: 15px;
-
-    transition: 0.3s;
-}
-
-nav a:hover {
     color: #52d278;
 }
 
 
-/* HERO */
+/* NAVIGATION */
+
+.nav-menu {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.nav-link {
+    position: relative;
+
+    padding: 12px 17px;
+
+    color: #dbe9df;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    border-radius: 7px;
+
+    transition:
+        color 0.3s ease,
+        background 0.3s ease;
+}
+
+.nav-link::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 5px;
+
+    right: 50%;
+
+    width: 0;
+
+    height: 2px;
+
+    background: #52d278;
+
+    transform: translateX(50%);
+
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+
+    background: rgba(82, 210, 120, 0.08);
+}
+
+.nav-link:hover::after {
+    width: 22px;
+}
+
+.nav-link.active {
+    color: #ffffff;
+
+    background: rgba(82, 210, 120, 0.10);
+}
+
+
+/* CONTACT BUTTON */
+
+.nav-contact {
+    margin-right: 10px;
+
+    padding: 11px 22px;
+
+    border: 1px solid #3ebd69;
+
+    border-radius: 7px;
+
+    color: white;
+
+    text-decoration: none;
+
+    background: rgba(50, 173, 91, 0.12);
+
+    transition: 0.3s;
+}
+
+.nav-contact:hover {
+    background: #32ad5b;
+
+    border-color: #32ad5b;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 7px 20px rgba(50, 173, 91, 0.20);
+}
+
+
+/* ==============================
+   HERO
+============================== */
 
 .hero {
     min-height: 90vh;
@@ -111,7 +216,9 @@ nav a:hover {
         url("hero.jpg");
 
     background-size: cover;
+
     background-position: center;
+
     background-repeat: no-repeat;
 
     color: white;
@@ -155,6 +262,7 @@ nav a:hover {
     margin-top: 40px;
 
     display: flex;
+
     gap: 15px;
 }
 
@@ -177,6 +285,7 @@ nav a:hover {
 
 .primary {
     background: #32ad5b;
+
     color: white;
 }
 
@@ -410,7 +519,9 @@ section {
     border-top: 3px solid #32ad5b;
 
     border-left: 1px solid #e0e8e2;
+
     border-right: 1px solid #e0e8e2;
+
     border-bottom: 1px solid #e0e8e2;
 
     transition: 0.3s;
@@ -492,6 +603,16 @@ section {
     grid-template-columns: 1fr 1fr;
 
     gap: 70px;
+
+    direction: ltr;
+}
+
+.contact-info {
+    direction: rtl;
+}
+
+.contact-content form {
+    direction: rtl;
 }
 
 .contact-info h3 {
@@ -617,12 +738,46 @@ footer p {
 }
 
 
-/* RESPONSIVE */
+/* ==============================
+   RESPONSIVE
+============================== */
 
 @media (max-width: 900px) {
 
-    nav {
-        display: none;
+    .navbar {
+        height: auto;
+
+        padding: 15px 0;
+    }
+
+    .navbar-container {
+        width: 90%;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-menu {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 4px;
+    }
+
+    .nav-link {
+        padding: 8px 10px;
+
+        font-size: 13px;
+    }
+
+    .nav-contact {
+        padding: 8px 14px;
+
+        margin-right: 4px;
     }
 
     .products-grid,
@@ -666,25 +821,29 @@ footer p {
         padding: 80px 6%;
     }
 
-    .navbar {
-        padding: 0 5%;
+    .brand-name strong {
+        font-size: 18px;
     }
 
-    .logo {
-        gap: 8px;
-
-        font-size: 19px;
-    }
-
-    .logo img {
+    .brand img {
         width: 42px;
         height: 42px;
     }
 
-    .logo-text span {
-        font-size: 7px;
+    .nav-menu {
+        gap: 2px;
+    }
 
-        letter-spacing: 3px;
+    .nav-link {
+        padding: 7px 8px;
+
+        font-size: 12px;
+    }
+
+    .nav-contact {
+        padding: 7px 11px;
+
+        font-size: 12px;
     }
 
     .hero h1 {
