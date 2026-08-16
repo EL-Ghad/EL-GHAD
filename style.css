@@ -10,27 +10,32 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    background: #f5f5f2;
-    color: #151515;
+    background: #f3f6f3;
+    color: #151a16;
     line-height: 1.7;
 }
 
 
-/* NAVBAR */
+/* =========================
+   NAVBAR
+========================= */
 
 .navbar {
     height: 80px;
     padding: 0 8%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    background: #111;
+    background: #0b2417;
     color: white;
 
     position: sticky;
     top: 0;
     z-index: 1000;
+
+    border-bottom: 1px solid #1f5c3b;
 }
 
 .logo {
@@ -41,9 +46,11 @@ body {
 
 .logo span {
     display: block;
+
     font-size: 9px;
     letter-spacing: 4px;
-    color: #aaa;
+
+    color: #7fbf9a;
 }
 
 nav {
@@ -54,16 +61,20 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
+
     font-size: 15px;
+
     transition: .3s;
 }
 
 nav a:hover {
-    color: #b9b9b9;
+    color: #55c982;
 }
 
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero {
     min-height: 90vh;
@@ -74,11 +85,16 @@ nav a:hover {
     padding: 100px 10%;
 
     background:
+        radial-gradient(
+            circle at 80% 20%,
+            #1d7046 0%,
+            transparent 30%
+        ),
         linear-gradient(
-            90deg,
-            #111 0%,
-            #222 55%,
-            #444 100%
+            120deg,
+            #07160e 0%,
+            #0d2f1d 50%,
+            #124b2d 100%
         );
 
     color: white;
@@ -90,64 +106,84 @@ nav a:hover {
 
 .small-title {
     letter-spacing: 5px;
+
     font-size: 13px;
-    color: #aaa;
+
+    color: #6fca91;
+
     margin-bottom: 20px;
 }
 
 .hero h1 {
     font-size: clamp(45px, 7vw, 85px);
+
     line-height: 1.1;
+
     margin-bottom: 30px;
 }
 
 .hero h1 span {
-    color: #aaa;
+    color: #55c982;
 }
 
 .hero p {
     max-width: 600px;
-    color: #ccc;
+
+    color: #c8d8ce;
+
     font-size: 18px;
 }
 
 .hero-buttons {
     margin-top: 40px;
+
     display: flex;
     gap: 15px;
 }
 
 .btn {
     display: inline-block;
+
     padding: 14px 30px;
 
     text-decoration: none;
+
     font-weight: bold;
 
     transition: .3s;
+
+    border-radius: 3px;
 }
 
 .primary {
-    background: white;
-    color: #111;
+    background: #36a866;
+    color: white;
 }
 
 .primary:hover {
-    background: #ccc;
+    background: #45c77a;
+
+    transform: translateY(-2px);
 }
 
 .secondary {
-    border: 1px solid #777;
+    border: 1px solid #55c982;
+
     color: white;
 }
 
 .secondary:hover {
-    background: white;
-    color: #111;
+    background: #36a866;
+
+    border-color: #36a866;
+
+    color: white;
 }
 
 
-/* SECTIONS */
+/* =========================
+   SECTIONS
+========================= */
 
 section {
     padding: 110px 8%;
@@ -155,14 +191,18 @@ section {
 
 .section-title {
     text-align: center;
+
     margin-bottom: 60px;
 }
 
 .section-title p,
 .section-label {
     font-size: 12px;
+
     letter-spacing: 4px;
-    color: #777;
+
+    color: #3d9560;
+
     margin-bottom: 10px;
 }
 
@@ -171,66 +211,94 @@ section {
 }
 
 .section-title span {
-    color: #777;
+    color: #718078;
 }
 
 
-/* PRODUCTS */
+/* =========================
+   PRODUCTS
+========================= */
 
 .products {
-    background: #f5f5f2;
+    background: #f3f6f3;
 }
 
 .products-grid {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 20px;
 }
 
 .product-card {
     background: white;
+
     padding: 40px;
 
     min-height: 300px;
 
-    border: 1px solid #ddd;
+    border: 1px solid #dce6df;
+
+    border-top: 3px solid #36a866;
 
     transition: .3s;
 }
 
 .product-card:hover {
     transform: translateY(-8px);
+
+    border-color: #36a866;
+
+    box-shadow: 0 15px 35px rgba(23, 74, 45, .12);
 }
 
 .product-icon {
     font-size: 35px;
+
     margin-bottom: 25px;
+
+    color: #36a866;
 }
 
 .product-card h3 {
     font-size: 24px;
+
     margin-bottom: 12px;
 }
 
 .product-card p {
-    color: #777;
+    color: #718078;
+
     margin-bottom: 30px;
 }
 
 .product-card a {
-    color: #111;
+    color: #197341;
+
     text-decoration: none;
+
     font-weight: bold;
+
+    transition: .3s;
+}
+
+.product-card a:hover {
+    color: #36a866;
 }
 
 
-/* ABOUT */
+/* =========================
+   ABOUT
+========================= */
 
 .about {
-    background: #111;
+    background: #0b2417;
+
     color: white;
 
     display: grid;
+
     grid-template-columns: 1fr 1fr;
 
     gap: 80px;
@@ -240,44 +308,64 @@ section {
 
 .about h2 {
     font-size: 55px;
+
     line-height: 1.15;
+
     margin-bottom: 25px;
 }
 
 .about h2 span {
-    color: #777;
+    color: #55c982;
 }
 
 .about-text > p:not(.section-label) {
-    color: #bbb;
+    color: #b9cfc1;
+
     max-width: 600px;
+
     margin-bottom: 35px;
 }
 
 .about-box {
     display: flex;
+
     flex-direction: column;
+
     gap: 2px;
 }
 
 .about-box div {
-    background: #1c1c1c;
+    background: #123a24;
+
     padding: 30px;
 
     display: flex;
+
     justify-content: space-between;
+
+    border-right: 3px solid #36a866;
+
+    transition: .3s;
+}
+
+.about-box div:hover {
+    background: #174b2e;
 }
 
 .about-box strong {
     font-size: 30px;
-    color: #777;
+
+    color: #55c982;
 }
 
 
-/* SERVICES */
+/* =========================
+   SERVICES
+========================= */
 
 .services-grid {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
 
     gap: 20px;
@@ -285,38 +373,64 @@ section {
 
 .service {
     background: white;
+
     padding: 45px;
 
-    border-top: 3px solid #111;
+    border-top: 3px solid #36a866;
+
+    border-left: 1px solid #e0e7e2;
+
+    border-right: 1px solid #e0e7e2;
+
+    border-bottom: 1px solid #e0e7e2;
+
+    transition: .3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 30px rgba(23, 74, 45, .1);
 }
 
 .service span {
-    color: #999;
+    color: #36a866;
 }
 
 .service h3 {
     font-size: 25px;
+
     margin: 15px 0;
 }
 
 .service p {
-    color: #777;
+    color: #718078;
 }
 
 
-/* CTA */
+/* =========================
+   CTA
+========================= */
 
 .cta {
-    background: #222;
+    background:
+        linear-gradient(
+            120deg,
+            #0b2417,
+            #155b35
+        );
+
     color: white;
 
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 }
 
 .cta p {
-    color: #aaa;
+    color: #a9c7b4;
 }
 
 .cta h2 {
@@ -325,35 +439,52 @@ section {
 
 .light {
     background: white;
-    color: #111;
+
+    color: #0b2417;
+}
+
+.light:hover {
+    background: #55c982;
+
+    color: white;
 }
 
 
-/* CONTACT */
+/* =========================
+   CONTACT
+========================= */
 
 .contact {
-    background: #f5f5f2;
+    background: #f3f6f3;
 }
 
 .contact-content {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 70px;
 }
 
 .contact-info h3 {
     font-size: 30px;
+
     margin-bottom: 20px;
+
+    color: #0b2417;
 }
 
 .contact-info p {
-    color: #777;
+    color: #718078;
+
     margin-bottom: 10px;
 }
 
 form {
     display: flex;
+
     flex-direction: column;
+
     gap: 15px;
 }
 
@@ -363,14 +494,27 @@ textarea {
 
     padding: 17px;
 
-    border: 1px solid #ccc;
+    border: 1px solid #ccd9d0;
+
     background: white;
 
     font-family: inherit;
+
+    outline: none;
+
+    transition: .3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #36a866;
+
+    box-shadow: 0 0 0 3px rgba(54, 168, 102, .1);
 }
 
 textarea {
     height: 150px;
+
     resize: none;
 }
 
@@ -379,47 +523,66 @@ form button {
 
     border: none;
 
-    background: #111;
+    background: #0b2417;
+
     color: white;
 
     font-size: 16px;
+
     font-weight: bold;
 
     cursor: pointer;
+
+    transition: .3s;
+}
+
+form button:hover {
+    background: #36a866;
 }
 
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
-    background: #111;
+    background: #07160e;
+
     color: white;
 
     padding: 50px 8%;
 
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 }
 
 .footer-logo {
     font-size: 25px;
+
     font-weight: bold;
 }
 
 .footer-logo span {
     display: block;
+
     font-size: 9px;
+
     letter-spacing: 4px;
-    color: #777;
+
+    color: #55c982;
 }
 
 footer p {
-    color: #777;
+    color: #718078;
 }
 
 
-/* RESPONSIVE */
+/* =========================
+   RESPONSIVE
+========================= */
 
 @media (max-width: 900px) {
 
@@ -440,13 +603,17 @@ footer p {
 
     .cta {
         flex-direction: column;
+
         align-items: flex-start;
+
         gap: 30px;
     }
 
     footer {
         flex-direction: column;
+
         gap: 20px;
+
         align-items: flex-start;
     }
 }
