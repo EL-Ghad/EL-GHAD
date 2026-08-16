@@ -1,7 +1,7 @@
 /* =========================================================
    EL-GHAD ALUMINUM
    MODERN PREMIUM DESIGN
-   V3 — IMPROVED PRODUCT LINK HOVER
+   V3 — PRODUCT BUTTON HOVER FIX
 ========================================================= */
 
 :root {
@@ -261,7 +261,9 @@ img {
 }
 
 
-/* LOGO */
+/* =========================================================
+   LOGO
+========================================================= */
 
 .logo {
     display: flex;
@@ -318,7 +320,9 @@ img {
 }
 
 
-/* NAV LINKS */
+/* =========================================================
+   NAV LINKS
+========================================================= */
 
 nav {
     display: flex;
@@ -367,7 +371,9 @@ nav a.active::after {
 }
 
 
-/* NAV BUTTON */
+/* =========================================================
+   NAV BUTTON
+========================================================= */
 
 nav .nav-button {
     margin-right: 12px;
@@ -723,7 +729,9 @@ nav .nav-button:hover {
 }
 
 
-/* CARD */
+/* =========================================================
+   HERO CARD
+========================================================= */
 
 .hero-card {
     position: relative;
@@ -769,7 +777,9 @@ nav .nav-button:hover {
 }
 
 
-/* CARD HEADER */
+/* =========================================================
+   CARD HEADER
+========================================================= */
 
 .card-header {
     display: flex;
@@ -811,7 +821,9 @@ nav .nav-button:hover {
 }
 
 
-/* CARD MAIN */
+/* =========================================================
+   CARD MAIN
+========================================================= */
 
 .card-main {
     position: relative;
@@ -863,7 +875,9 @@ nav .nav-button:hover {
 }
 
 
-/* CARD CONTENT */
+/* =========================================================
+   CARD CONTENT
+========================================================= */
 
 .card-content span {
     color: var(--green-light);
@@ -886,7 +900,9 @@ nav .nav-button:hover {
 }
 
 
-/* CARD FOOTER */
+/* =========================================================
+   CARD FOOTER
+========================================================= */
 
 .card-footer {
     position: absolute;
@@ -936,7 +952,9 @@ nav .nav-button:hover {
 }
 
 
-/* FLOATING LABELS */
+/* =========================================================
+   FLOATING LABELS
+========================================================= */
 
 .floating-label {
     position: absolute;
@@ -997,7 +1015,9 @@ nav .nav-button:hover {
 }
 
 
-/* HERO BOTTOM */
+/* =========================================================
+   HERO BOTTOM
+========================================================= */
 
 .hero-bottom {
     position: absolute;
@@ -1434,68 +1454,51 @@ nav .nav-button:hover {
 
 
 /* =========================================================
-   PRODUCT LINK — FULL HOVER
+   PRODUCT BUTTON
+   "اطلب المنتج"
 ========================================================= */
 
 .product-card > a {
     position: absolute;
 
     right: 30px;
-    bottom: 25px;
+    bottom: 28px;
+
+    min-height: 44px;
+
+    padding: 9px 15px;
 
     display: inline-flex;
 
     align-items: center;
     justify-content: center;
 
-    gap: 14px;
-
-    padding: 9px 13px;
+    gap: 13px;
 
     color: var(--green-dark);
+
+    background: transparent;
 
     border: 1px solid transparent;
 
     border-radius: 7px;
 
-    background: transparent;
-
     font-size: 0.95rem;
 
-    font-weight: bold;
+    font-weight: 700;
+
+    cursor: pointer;
 
     transition:
-        color .3s ease,
         background .3s ease,
+        color .3s ease,
         border-color .3s ease,
         transform .3s ease,
         box-shadow .3s ease;
 }
 
 
-/* الكلمة نفسها */
-
-.product-card > a span {
-    transition: color .3s ease;
-}
-
-
-/* السهم */
-
-.product-card > a b {
-    font-size: 1.2rem;
-
-    line-height: 1;
-
-    transition:
-        transform .3s ease,
-        color .3s ease;
-}
-
-
-/* =========================================================
-   WHEN MOUSE IS ON "اطلب المنتج" OR ARROW
-========================================================= */
+/* الماوس على الزر كله */
 
 .product-card > a:hover {
     color: white;
@@ -1511,11 +1514,21 @@ nav .nav-button:hover {
 }
 
 
-/* السهم يتحرك مع الكلمة */
+/* السهم */
+
+.product-card > a b {
+    font-size: 1.2rem;
+
+    line-height: 1;
+
+    transition:
+        transform .3s ease;
+}
+
+
+/* الماوس على الكلمة أو السهم */
 
 .product-card > a:hover b {
-    color: white;
-
     transform: translateX(-5px);
 }
 
@@ -1657,7 +1670,9 @@ nav .nav-button:hover {
 }
 
 
-/* ABOUT STATS */
+/* =========================================================
+   ABOUT STATS
+========================================================= */
 
 .about-stats {
     border-top:
@@ -1873,7 +1888,9 @@ nav .nav-button:hover {
 }
 
 
-/* FORM BOX */
+/* =========================================================
+   FORM BOX
+========================================================= */
 
 .contact-form-box {
     direction: rtl;
@@ -1932,7 +1949,9 @@ nav .nav-button:hover {
 }
 
 
-/* INPUTS */
+/* =========================================================
+   INPUTS
+========================================================= */
 
 #contactForm {
     display: flex;
@@ -2052,7 +2071,9 @@ form textarea {
 }
 
 
-/* CONTACT INFO */
+/* =========================================================
+   CONTACT INFO
+========================================================= */
 
 .contact-info {
     direction: rtl;
@@ -2166,7 +2187,9 @@ form textarea {
 }
 
 
-/* LOCATION BUTTON */
+/* =========================================================
+   LOCATION BUTTON
+========================================================= */
 
 .location-button {
     display: inline-flex;
@@ -2239,7 +2262,9 @@ footer {
 }
 
 
-/* FOOTER BRAND */
+/* =========================================================
+   FOOTER BRAND
+========================================================= */
 
 .footer-brand {
     display: flex;
@@ -2299,7 +2324,9 @@ footer {
 }
 
 
-/* FOOTER CENTER */
+/* =========================================================
+   FOOTER CENTER
+========================================================= */
 
 .footer-center {
     display: flex;
@@ -2324,7 +2351,9 @@ footer {
 }
 
 
-/* SOCIAL */
+/* =========================================================
+   SOCIAL
+========================================================= */
 
 .social-links {
     display: flex;
@@ -2371,7 +2400,9 @@ footer {
 }
 
 
-/* FOOTER BOTTOM */
+/* =========================================================
+   FOOTER BOTTOM
+========================================================= */
 
 .footer-bottom {
     width: 90%;
@@ -2722,11 +2753,16 @@ footer {
         min-height: 310px;
     }
 
+
+    /* PRODUCT BUTTON MOBILE */
+
     .product-card > a {
         right: 22px;
         bottom: 22px;
 
-        padding: 9px 12px;
+        min-height: 43px;
+
+        padding: 8px 13px;
 
         font-size: 0.9rem;
     }
