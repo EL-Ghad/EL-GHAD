@@ -15,6 +15,7 @@ body {
     line-height: 1.7;
 }
 
+
 /* =========================
    NAVBAR
 ========================= */
@@ -22,6 +23,7 @@ body {
 .navbar {
     height: 80px;
     padding: 0 8%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,6 +78,7 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
+
     font-size: 15px;
 
     transition: 0.3s;
@@ -84,6 +87,7 @@ nav a {
 nav a:hover {
     color: #52d278;
 }
+
 
 /* =========================
    HERO
@@ -119,14 +123,19 @@ nav a:hover {
 
 .small-title {
     letter-spacing: 5px;
+
     font-size: 13px;
+
     color: #63d486;
+
     margin-bottom: 20px;
 }
 
 .hero h1 {
     font-size: clamp(45px, 7vw, 85px);
+
     line-height: 1.1;
+
     margin-bottom: 30px;
 }
 
@@ -136,7 +145,9 @@ nav a:hover {
 
 .hero p {
     max-width: 600px;
+
     color: #e0ebe4;
+
     font-size: 18px;
 }
 
@@ -146,6 +157,7 @@ nav a:hover {
     display: flex;
     gap: 15px;
 }
+
 
 /* =========================
    BUTTONS
@@ -157,6 +169,7 @@ nav a:hover {
     padding: 14px 30px;
 
     text-decoration: none;
+
     font-weight: bold;
 
     border-radius: 4px;
@@ -171,6 +184,7 @@ nav a:hover {
 
 .primary:hover {
     background: #43ca70;
+
     transform: translateY(-2px);
 }
 
@@ -184,6 +198,7 @@ nav a:hover {
     border-color: #32ad5b;
 }
 
+
 /* =========================
    SECTIONS
 ========================= */
@@ -194,6 +209,7 @@ section {
 
 .section-title {
     text-align: center;
+
     margin-bottom: 60px;
 }
 
@@ -210,12 +226,14 @@ section {
 
 .section-title h2 {
     font-size: 48px;
+
     color: #102219;
 }
 
 .section-title span {
     color: #718078;
 }
+
 
 /* =========================
    PRODUCTS
@@ -230,7 +248,9 @@ section {
         url("products-bg.png");
 
     background-size: cover;
+
     background-position: center;
+
     background-attachment: fixed;
 }
 
@@ -267,29 +287,36 @@ section {
 
 .product-icon {
     font-size: 35px;
+
     margin-bottom: 25px;
+
     color: #32ad5b;
 }
 
 .product-card h3 {
     font-size: 24px;
+
     margin-bottom: 12px;
 }
 
 .product-card p {
     color: #718078;
+
     margin-bottom: 30px;
 }
 
 .product-card a {
     color: #198143;
+
     text-decoration: none;
+
     font-weight: bold;
 }
 
 .product-card a:hover {
     color: #32ad5b;
 }
+
 
 /* =========================
    ABOUT
@@ -304,7 +331,9 @@ section {
         url("about-bg.png");
 
     background-size: cover;
+
     background-position: center;
+
     background-attachment: fixed;
 
     color: white;
@@ -320,8 +349,11 @@ section {
 
 .about h2 {
     font-size: 55px;
+
     line-height: 1.15;
+
     margin-bottom: 25px;
+
     color: white;
 }
 
@@ -339,7 +371,9 @@ section {
 
 .about-box {
     display: flex;
+
     flex-direction: column;
+
     gap: 2px;
 }
 
@@ -349,6 +383,7 @@ section {
     padding: 30px;
 
     display: flex;
+
     justify-content: space-between;
 
     border-right: 3px solid #32ad5b;
@@ -362,8 +397,10 @@ section {
 
 .about-box strong {
     font-size: 30px;
+
     color: #52d278;
 }
+
 
 /* =========================
    SERVICES
@@ -408,12 +445,14 @@ section {
 
 .service h3 {
     font-size: 25px;
+
     margin: 15px 0;
 }
 
 .service p {
     color: #718078;
 }
+
 
 /* =========================
    CTA
@@ -432,6 +471,7 @@ section {
     display: flex;
 
     justify-content: space-between;
+
     align-items: center;
 }
 
@@ -441,18 +481,22 @@ section {
 
 .cta h2 {
     font-size: 45px;
+
     color: white;
 }
 
 .light {
     background: white;
+
     color: #071b10;
 }
 
 .light:hover {
     background: #52d278;
+
     color: white;
 }
+
 
 /* =========================
    CONTACT
@@ -481,10 +525,8 @@ section {
 .contact-info p {
     color: #718078;
 
-    margin-bottom: 14px;
+    margin-bottom: 12px;
 }
-
-/* روابط التواصل */
 
 .contact-info a {
     color: #329457;
@@ -502,32 +544,9 @@ section {
     text-decoration: underline;
 }
 
-/* الخريطة */
-
-.contact-info a[href*="maps"] {
-    color: #329457;
-}
-
-/* رقم الهاتف */
-
-.contact-info a[href^="tel"] {
-    color: #329457;
-}
-
-/* واتساب */
-
-.contact-info a[href*="wa.me"] {
-    color: #25a55a;
-}
-
-/* البريد */
-
-.contact-info a[href^="mailto"] {
-    color: #329457;
-}
 
 /* =========================
-   FORM
+   CONTACT FORM
 ========================= */
 
 form {
@@ -591,6 +610,7 @@ form button:hover {
     background: #32ad5b;
 }
 
+
 /* =========================
    FOOTER
 ========================= */
@@ -611,6 +631,7 @@ footer {
 
 .footer-logo {
     font-size: 25px;
+
     font-weight: bold;
 }
 
@@ -627,6 +648,7 @@ footer {
 footer p {
     color: #718078;
 }
+
 
 /* =========================
    RESPONSIVE
@@ -647,6 +669,7 @@ footer p {
 
     .hero {
         min-height: 80vh;
+
         padding: 80px 7%;
     }
 
@@ -656,16 +679,25 @@ footer p {
 
     .cta {
         flex-direction: column;
+
         align-items: flex-start;
+
         gap: 30px;
     }
 
     footer {
         flex-direction: column;
+
         gap: 20px;
+
         align-items: flex-start;
     }
 }
+
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 500px) {
 
@@ -679,6 +711,7 @@ footer p {
 
     .logo {
         gap: 8px;
+
         font-size: 19px;
     }
 
@@ -689,6 +722,7 @@ footer p {
 
     .logo-text span {
         font-size: 7px;
+
         letter-spacing: 3px;
     }
 
@@ -702,6 +736,7 @@ footer p {
 
     .hero-buttons {
         flex-direction: column;
+
         align-items: stretch;
     }
 
@@ -720,5 +755,4 @@ footer p {
     .cta h2 {
         font-size: 35px;
     }
-
 }
