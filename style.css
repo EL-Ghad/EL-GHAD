@@ -50,10 +50,8 @@ body {
 
 .logo span {
     display: block;
-
     font-size: 9px;
     letter-spacing: 4px;
-
     color: #83c99b;
 }
 
@@ -65,14 +63,12 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-
     font-size: 15px;
-
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #45c96d;
+    color: #52d278;
 }
 
 
@@ -110,19 +106,14 @@ nav a:hover {
 
 .small-title {
     letter-spacing: 5px;
-
     font-size: 13px;
-
     color: #63d486;
-
     margin-bottom: 20px;
 }
 
 .hero h1 {
     font-size: clamp(45px, 7vw, 85px);
-
     line-height: 1.1;
-
     margin-bottom: 30px;
 }
 
@@ -132,15 +123,12 @@ nav a:hover {
 
 .hero p {
     max-width: 600px;
-
     color: #d5e2d9;
-
     font-size: 18px;
 }
 
 .hero-buttons {
     margin-top: 40px;
-
     display: flex;
     gap: 15px;
 }
@@ -151,7 +139,6 @@ nav a:hover {
     padding: 14px 30px;
 
     text-decoration: none;
-
     font-weight: bold;
 
     transition: 0.3s;
@@ -166,25 +153,22 @@ nav a:hover {
 
 .primary:hover {
     background: #43ca70;
-
     transform: translateY(-2px);
 }
 
 .secondary {
     border: 1px solid #62d486;
-
     color: white;
 }
 
 .secondary:hover {
     background: #32ad5b;
-
     border-color: #32ad5b;
 }
 
 
 /* ================================
-   SECTIONS
+   GENERAL SECTIONS
 ================================ */
 
 section {
@@ -193,24 +177,19 @@ section {
 
 .section-title {
     text-align: center;
-
     margin-bottom: 60px;
 }
 
 .section-title p,
 .section-label {
     font-size: 12px;
-
     letter-spacing: 4px;
-
     color: #329457;
-
     margin-bottom: 10px;
 }
 
 .section-title h2 {
     font-size: 48px;
-
     color: #102219;
 }
 
@@ -224,26 +203,31 @@ section {
 ================================ */
 
 .products {
-    background: #f3f7f4;
+    background:
+        linear-gradient(
+            rgba(243, 247, 244, 0.90),
+            rgba(243, 247, 244, 0.90)
+        ),
+        url("products-bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .products-grid {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 20px;
 }
 
 .product-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.94);
 
     padding: 40px;
-
     min-height: 300px;
 
-    border: 1px solid #dce7df;
-
+    border: 1px solid rgba(50, 173, 91, 0.25);
     border-top: 3px solid #32ad5b;
 
     transition: 0.3s;
@@ -252,38 +236,33 @@ section {
 .product-card:hover {
     transform: translateY(-8px);
 
+    background: rgba(255, 255, 255, 0.98);
+
     border-color: #32ad5b;
 
-    box-shadow: 0 15px 35px rgba(24, 91, 47, 0.12);
+    box-shadow: 0 15px 35px rgba(24, 91, 47, 0.15);
 }
 
 .product-icon {
     font-size: 35px;
-
     margin-bottom: 25px;
-
     color: #32ad5b;
 }
 
 .product-card h3 {
     font-size: 24px;
-
     margin-bottom: 12px;
 }
 
 .product-card p {
     color: #718078;
-
     margin-bottom: 30px;
 }
 
 .product-card a {
     color: #198143;
-
     text-decoration: none;
-
     font-weight: bold;
-
     transition: 0.3s;
 }
 
@@ -293,16 +272,24 @@ section {
 
 
 /* ================================
-   ABOUT
+   ABOUT / من نحن
 ================================ */
 
 .about {
-    background: #071b10;
+    background:
+        linear-gradient(
+            rgba(7, 27, 16, 0.88),
+            rgba(7, 27, 16, 0.88)
+        ),
+        url("about-bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 
     color: white;
 
     display: grid;
-
     grid-template-columns: 1fr 1fr;
 
     gap: 80px;
@@ -312,10 +299,9 @@ section {
 
 .about h2 {
     font-size: 55px;
-
     line-height: 1.15;
-
     margin-bottom: 25px;
+    color: white;
 }
 
 .about h2 span {
@@ -323,28 +309,23 @@ section {
 }
 
 .about-text > p:not(.section-label) {
-    color: #b8cfc0;
-
+    color: #d0dfd5;
     max-width: 600px;
-
     margin-bottom: 35px;
 }
 
 .about-box {
     display: flex;
-
     flex-direction: column;
-
     gap: 2px;
 }
 
 .about-box div {
-    background: #10351f;
+    background: rgba(16, 53, 31, 0.88);
 
     padding: 30px;
 
     display: flex;
-
     justify-content: space-between;
 
     border-right: 3px solid #32ad5b;
@@ -353,12 +334,11 @@ section {
 }
 
 .about-box div:hover {
-    background: #164a2a;
+    background: rgba(22, 74, 42, 0.95);
 }
 
 .about-box strong {
     font-size: 30px;
-
     color: #52d278;
 }
 
@@ -373,9 +353,7 @@ section {
 
 .services-grid {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 20px;
 }
 
@@ -387,9 +365,7 @@ section {
     border-top: 3px solid #32ad5b;
 
     border-left: 1px solid #e0e8e2;
-
     border-right: 1px solid #e0e8e2;
-
     border-bottom: 1px solid #e0e8e2;
 
     transition: 0.3s;
@@ -407,7 +383,6 @@ section {
 
 .service h3 {
     font-size: 25px;
-
     margin: 15px 0;
 }
 
@@ -431,9 +406,7 @@ section {
     color: white;
 
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
 }
 
@@ -443,17 +416,16 @@ section {
 
 .cta h2 {
     font-size: 45px;
+    color: white;
 }
 
 .light {
     background: white;
-
     color: #071b10;
 }
 
 .light:hover {
     background: #52d278;
-
     color: white;
 }
 
@@ -463,36 +435,33 @@ section {
 ================================ */
 
 .contact {
-    background: #f3f7f4;
+    background:
+        linear-gradient(
+            rgba(243, 247, 244, 0.96),
+            rgba(243, 247, 244, 0.96)
+        );
 }
 
 .contact-content {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 70px;
 }
 
 .contact-info h3 {
     font-size: 30px;
-
     margin-bottom: 20px;
-
     color: #071b10;
 }
 
 .contact-info p {
     color: #718078;
-
     margin-bottom: 10px;
 }
 
 form {
     display: flex;
-
     flex-direction: column;
-
     gap: 15px;
 }
 
@@ -517,12 +486,12 @@ input:focus,
 textarea:focus {
     border-color: #32ad5b;
 
-    box-shadow: 0 0 0 3px rgba(50, 173, 91, 0.1);
+    box-shadow:
+        0 0 0 3px rgba(50, 173, 91, 0.1);
 }
 
 textarea {
     height: 150px;
-
     resize: none;
 }
 
@@ -532,11 +501,9 @@ form button {
     border: none;
 
     background: #071b10;
-
     color: white;
 
     font-size: 16px;
-
     font-weight: bold;
 
     cursor: pointer;
@@ -555,21 +522,17 @@ form button:hover {
 
 footer {
     background: #041109;
-
     color: white;
 
     padding: 50px 8%;
 
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
 }
 
 .footer-logo {
     font-size: 25px;
-
     font-weight: bold;
 }
 
@@ -577,7 +540,6 @@ footer {
     display: block;
 
     font-size: 9px;
-
     letter-spacing: 4px;
 
     color: #52d278;
@@ -607,9 +569,7 @@ footer p {
 
     .hero {
         min-height: 80vh;
-
         padding: 80px 7%;
-
         background-position: center;
     }
 
@@ -619,17 +579,13 @@ footer p {
 
     .cta {
         flex-direction: column;
-
         align-items: flex-start;
-
         gap: 30px;
     }
 
     footer {
         flex-direction: column;
-
         gap: 20px;
-
         align-items: flex-start;
     }
 }
@@ -655,7 +611,6 @@ footer p {
 
     .hero-buttons {
         flex-direction: column;
-
         align-items: stretch;
     }
 
