@@ -14,25 +14,26 @@
 <body>
 
     <!-- =========================
-         LOADING
+         LOADER
     ========================== -->
 
     <div id="loader">
-
         <div class="loader-box">
 
-            <img src="logo.png" alt="EL-GHAD Aluminum">
+            <div class="loader-logo">
+                <img src="logo.png" alt="EL-GHAD Aluminum">
+            </div>
 
             <h2>EL-GHAD</h2>
-
             <p>ALUMINUM</p>
 
             <div class="loader-line">
                 <span></span>
             </div>
 
-        </div>
+            <small>جاري تحميل الموقع...</small>
 
+        </div>
     </div>
 
 
@@ -46,9 +47,11 @@
 
             <a href="#home" class="logo">
 
-                <img src="logo.png" alt="EL-GHAD Aluminum">
+                <div class="logo-image">
+                    <img src="logo.png" alt="EL-GHAD Aluminum">
+                </div>
 
-                <div>
+                <div class="logo-text">
                     <strong>EL-GHAD</strong>
                     <span>ALUMINUM</span>
                 </div>
@@ -63,7 +66,7 @@
                 </a>
 
                 <a href="#products">
-                    منتجاتنا
+                    المنتجات
                 </a>
 
                 <a href="#about">
@@ -86,19 +89,28 @@
 
 
     <!-- =========================
-         HOME
+         MAIN
     ========================== -->
 
     <main id="home">
 
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
         <section class="hero">
 
-            <div class="hero-background"></div>
+            <div class="hero-grid"></div>
+
+            <div class="hero-circle hero-circle-one"></div>
+            <div class="hero-circle hero-circle-two"></div>
+
 
             <div class="hero-container">
 
 
-                <!-- RIGHT SIDE -->
+                <!-- HERO TEXT -->
 
                 <div class="hero-text">
 
@@ -107,24 +119,26 @@
                         EL-GHAD ALUMINUM
                     </div>
 
+
                     <h1>
-                        كل ما تحتاجه
+                        مستلزمات الألومنيوم
                         <br>
-                        <strong>لعالم الألومنيوم</strong>
+                        <strong>في مكان واحد.</strong>
                     </h1>
 
+
                     <p>
-                        نوفر لك مستلزمات وإكسسوارات الألومنيوم
-                        بجودة عالية، وتشكيلة متنوعة تناسب
-                        احتياجات الورش والمصانع والمشروعات.
+                        نوفر لك مجموعة متنوعة من مستلزمات وإكسسوارات
+                        الألومنيوم بجودة موثوقة، لتساعدك في تنفيذ
+                        أعمالك بسهولة وكفاءة.
                     </p>
 
 
                     <div class="hero-buttons">
 
                         <a href="#products" class="btn-main">
-                            اكتشف منتجاتنا
-                            <span>←</span>
+                            <span>اكتشف منتجاتنا</span>
+                            <b>←</b>
                         </a>
 
                         <a href="#contact" class="btn-outline">
@@ -136,19 +150,19 @@
 
                     <div class="hero-features">
 
-                        <div>
+                        <div class="hero-feature">
                             <strong>01</strong>
                             <span>جودة موثوقة</span>
                         </div>
 
-                        <div>
+                        <div class="hero-feature">
                             <strong>02</strong>
-                            <span>منتجات متنوعة</span>
+                            <span>تشكيلة متنوعة</span>
                         </div>
 
-                        <div>
+                        <div class="hero-feature">
                             <strong>03</strong>
-                            <span>خدمة احترافية</span>
+                            <span>تعامل احترافي</span>
                         </div>
 
                     </div>
@@ -156,56 +170,69 @@
                 </div>
 
 
-                <!-- LEFT SIDE -->
+                <!-- HERO VISUAL -->
 
-                <div class="hero-card-area">
+                <div class="hero-visual">
 
-                    <div class="hero-card-glow"></div>
+                    <div class="visual-shadow"></div>
 
                     <div class="hero-card">
 
-                        <div class="card-top">
-
+                        <div class="card-header">
                             <span>EL-GHAD</span>
 
-                            <div class="card-dot"></div>
-
+                            <div class="status">
+                                <i></i>
+                                QUALITY
+                            </div>
                         </div>
 
 
-                        <div class="card-logo">
+                        <div class="card-main">
+
+                            <div class="card-ring ring-one"></div>
+                            <div class="card-ring ring-two"></div>
 
                             <img src="logo.png" alt="EL-GHAD">
 
                         </div>
 
 
-                        <div class="card-title">
+                        <div class="card-content">
 
-                            <small>ALUMINUM</small>
+                            <span>ALUMINUM</span>
 
-                            <h3>
-                                QUALITY
+                            <h2>
+                                BUILT
                                 <br>
-                                YOU CAN TRUST
-                            </h3>
+                                FOR QUALITY.
+                            </h2>
 
                         </div>
 
 
-                        <div class="card-bottom">
+                        <div class="card-footer">
 
                             <div>
                                 <small>LOCATION</small>
-                                <span>جسر السويس – القاهرة</span>
+                                <strong>جسر السويس – القاهرة</strong>
                             </div>
 
-                            <div class="card-number">
-                                01
-                            </div>
+                            <b>01</b>
 
                         </div>
 
+                    </div>
+
+
+                    <div class="floating-label label-one">
+                        <span>✓</span>
+                        منتجات موثوقة
+                    </div>
+
+                    <div class="floating-label label-two">
+                        <span>◆</span>
+                        ALUMINUM
                     </div>
 
                 </div>
@@ -213,11 +240,13 @@
             </div>
 
 
-            <div class="scroll-down">
+            <div class="hero-bottom">
 
-                <span>SCROLL</span>
+                <span>SCROLL TO EXPLORE</span>
 
-                <div></div>
+                <div class="scroll-line">
+                    <i></i>
+                </div>
 
             </div>
 
@@ -232,9 +261,12 @@
 
             <div class="quick-container">
 
+
                 <div class="quick-item">
 
-                    <span class="quick-icon">◈</span>
+                    <div class="quick-icon">
+                        <span>◈</span>
+                    </div>
 
                     <div>
                         <small>منتجاتنا</small>
@@ -246,10 +278,12 @@
 
                 <div class="quick-item">
 
-                    <span class="quick-icon">✓</span>
+                    <div class="quick-icon">
+                        <span>✓</span>
+                    </div>
 
                     <div>
-                        <small>جودة</small>
+                        <small>الجودة</small>
                         <strong>منتجات موثوقة</strong>
                     </div>
 
@@ -258,20 +292,20 @@
 
                 <div class="quick-item">
 
-                    <span class="quick-icon">⌖</span>
+                    <div class="quick-icon">
+                        <span>⌖</span>
+                    </div>
 
                     <div>
                         <small>الموقع</small>
 
-                        <a
-                            href="https://maps.app.goo.gl/SUGSfYuRxxnyJsCo6"
-                            target="_blank"
-                            rel="noopener noreferrer">
+                        <a href="https://maps.app.goo.gl/SUGSfYuRxxnyJsCo6"
+                           target="_blank"
+                           rel="noopener noreferrer">
 
                             جسر السويس – القاهرة
 
                         </a>
-
                     </div>
 
                 </div>
@@ -279,7 +313,9 @@
 
                 <div class="quick-item">
 
-                    <span class="quick-icon">☎</span>
+                    <div class="quick-icon">
+                        <span>☎</span>
+                    </div>
 
                     <div>
                         <small>اتصل بنا</small>
@@ -287,7 +323,6 @@
                         <a href="tel:01034224083">
                             01034224083
                         </a>
-
                     </div>
 
                 </div>
@@ -303,6 +338,8 @@
 
         <section class="products" id="products">
 
+            <div class="products-overlay"></div>
+
             <div class="section-heading">
 
                 <span>OUR PRODUCTS</span>
@@ -312,8 +349,8 @@
                 </h2>
 
                 <p>
-                    كل ما تحتاجه لتنفيذ أعمال الألومنيوم
-                    في مكان واحد.
+                    مجموعة من أهم مستلزمات وإكسسوارات الألومنيوم
+                    التي تحتاجها في شغلك.
                 </p>
 
             </div>
@@ -321,130 +358,161 @@
 
             <div class="products-grid">
 
-                <div class="product-card">
 
-                    <div class="product-number">01</div>
+                <article class="product-card">
 
-                    <div class="product-symbol">⚙</div>
+                    <div class="product-top">
+                        <span>01</span>
+                        <i>⚙</i>
+                    </div>
 
-                    <h3>المفصلات</h3>
+                    <div class="product-content">
 
-                    <p>
-                        مفصلات ومستلزمات مناسبة
-                        لأعمال الألومنيوم المختلفة.
-                    </p>
+                        <h3>المفصلات</h3>
 
-                    <a href="#contact">
-                        اطلب المنتج
-                        <span>←</span>
-                    </a>
+                        <p>
+                            مفصلات ومستلزمات مناسبة لأعمال
+                            الألومنيوم المختلفة.
+                        </p>
 
-                </div>
-
-
-                <div class="product-card">
-
-                    <div class="product-number">02</div>
-
-                    <div class="product-symbol">◉</div>
-
-                    <h3>العجل</h3>
-
-                    <p>
-                        عجلات للأبواب والشبابيك
-                        وأنظمة الألومنيوم المنزلقة.
-                    </p>
+                    </div>
 
                     <a href="#contact">
-                        اطلب المنتج
-                        <span>←</span>
+                        <span>اطلب المنتج</span>
+                        <b>←</b>
                     </a>
 
-                </div>
+                </article>
 
 
-                <div class="product-card">
+                <article class="product-card">
 
-                    <div class="product-number">03</div>
+                    <div class="product-top">
+                        <span>02</span>
+                        <i>◉</i>
+                    </div>
 
-                    <div class="product-symbol">▰</div>
+                    <div class="product-content">
 
-                    <h3>الكاوتش</h3>
+                        <h3>العجل</h3>
 
-                    <p>
-                        كاوتش ومستلزمات الإحكام
-                        والعزل لأنظمة الألومنيوم.
-                    </p>
+                        <p>
+                            عجلات للأبواب والشبابيك وأنظمة
+                            الألومنيوم المنزلقة.
+                        </p>
+
+                    </div>
 
                     <a href="#contact">
-                        اطلب المنتج
-                        <span>←</span>
+                        <span>اطلب المنتج</span>
+                        <b>←</b>
                     </a>
 
-                </div>
+                </article>
 
 
-                <div class="product-card">
+                <article class="product-card">
 
-                    <div class="product-number">04</div>
+                    <div class="product-top">
+                        <span>03</span>
+                        <i>▰</i>
+                    </div>
 
-                    <div class="product-symbol">◆</div>
+                    <div class="product-content">
 
-                    <h3>الفرش</h3>
+                        <h3>الكاوتش</h3>
 
-                    <p>
-                        فرش ومستلزمات الأبواب
-                        والشبابيك.
-                    </p>
+                        <p>
+                            كاوتش ومستلزمات الإحكام والعزل
+                            لأنظمة الألومنيوم.
+                        </p>
+
+                    </div>
 
                     <a href="#contact">
-                        اطلب المنتج
-                        <span>←</span>
+                        <span>اطلب المنتج</span>
+                        <b>←</b>
                     </a>
 
-                </div>
+                </article>
 
 
-                <div class="product-card">
+                <article class="product-card">
 
-                    <div class="product-number">05</div>
+                    <div class="product-top">
+                        <span>04</span>
+                        <i>◆</i>
+                    </div>
 
-                    <div class="product-symbol">△</div>
+                    <div class="product-content">
 
-                    <h3>الزوايا</h3>
+                        <h3>الفرش</h3>
 
-                    <p>
-                        زوايا وإكسسوارات لتجميع
-                        قطاعات الألومنيوم.
-                    </p>
+                        <p>
+                            فرش ومستلزمات الأبواب والشبابيك
+                            وأنظمة الألومنيوم.
+                        </p>
+
+                    </div>
 
                     <a href="#contact">
-                        اطلب المنتج
-                        <span>←</span>
+                        <span>اطلب المنتج</span>
+                        <b>←</b>
                     </a>
 
-                </div>
+                </article>
 
 
-                <div class="product-card">
+                <article class="product-card">
 
-                    <div class="product-number">06</div>
+                    <div class="product-top">
+                        <span>05</span>
+                        <i>△</i>
+                    </div>
 
-                    <div class="product-symbol">＋</div>
+                    <div class="product-content">
 
-                    <h3>مستلزمات أخرى</h3>
+                        <h3>الزوايا</h3>
 
-                    <p>
-                        تشكيلة متنوعة من مستلزمات
-                        وإكسسوارات الألومنيوم.
-                    </p>
+                        <p>
+                            زوايا وإكسسوارات لتجميع قطاعات
+                            الألومنيوم المختلفة.
+                        </p>
+
+                    </div>
 
                     <a href="#contact">
-                        اطلب المنتج
-                        <span>←</span>
+                        <span>اطلب المنتج</span>
+                        <b>←</b>
                     </a>
 
-                </div>
+                </article>
+
+
+                <article class="product-card">
+
+                    <div class="product-top">
+                        <span>06</span>
+                        <i>＋</i>
+                    </div>
+
+                    <div class="product-content">
+
+                        <h3>مستلزمات أخرى</h3>
+
+                        <p>
+                            تشكيلة متنوعة من المستلزمات
+                            وإكسسوارات الألومنيوم.
+                        </p>
+
+                    </div>
+
+                    <a href="#contact">
+                        <span>اطلب المنتج</span>
+                        <b>←</b>
+                    </a>
+
+                </article>
 
             </div>
 
@@ -457,11 +525,16 @@
 
         <section class="about" id="about">
 
+            <div class="about-overlay"></div>
+
             <div class="about-container">
+
 
                 <div class="about-text">
 
-                    <span>ABOUT EL-GHAD</span>
+                    <span class="about-label">
+                        ABOUT EL-GHAD
+                    </span>
 
                     <h2>
                         نبني الثقة
@@ -477,8 +550,8 @@
                     </p>
 
                     <a href="#contact" class="about-button">
-                        تواصل معنا
-                        <span>←</span>
+                        <span>تواصل معنا</span>
+                        <b>←</b>
                     </a>
 
                 </div>
@@ -486,19 +559,39 @@
 
                 <div class="about-stats">
 
-                    <div>
+                    <div class="about-stat">
+
                         <strong>01</strong>
-                        <span>جودة المنتجات</span>
+
+                        <div>
+                            <span>QUALITY</span>
+                            <p>جودة المنتجات</p>
+                        </div>
+
                     </div>
 
-                    <div>
+
+                    <div class="about-stat">
+
                         <strong>02</strong>
-                        <span>تنوع المستلزمات</span>
+
+                        <div>
+                            <span>VARIETY</span>
+                            <p>تنوع المستلزمات</p>
+                        </div>
+
                     </div>
 
-                    <div>
+
+                    <div class="about-stat">
+
                         <strong>03</strong>
-                        <span>خدمة العملاء</span>
+
+                        <div>
+                            <span>SERVICE</span>
+                            <p>خدمة العملاء</p>
+                        </div>
+
                     </div>
 
                 </div>
@@ -531,9 +624,16 @@
 
             <div class="services-grid">
 
-                <div class="service-card">
 
-                    <span>01</span>
+                <article class="service-card">
+
+                    <div class="service-number">
+                        01
+                    </div>
+
+                    <div class="service-icon">
+                        ✓
+                    </div>
 
                     <h3>
                         جودة موثوقة
@@ -544,12 +644,20 @@
                         المناسبة للاستخدام.
                     </p>
 
-                </div>
+                    <span class="service-line"></span>
+
+                </article>
 
 
-                <div class="service-card">
+                <article class="service-card">
 
-                    <span>02</span>
+                    <div class="service-number">
+                        02
+                    </div>
+
+                    <div class="service-icon">
+                        ◈
+                    </div>
 
                     <h3>
                         تنوع المنتجات
@@ -560,23 +668,33 @@
                         التي تحتاجها في شغلك.
                     </p>
 
-                </div>
+                    <span class="service-line"></span>
+
+                </article>
 
 
-                <div class="service-card">
+                <article class="service-card">
 
-                    <span>03</span>
+                    <div class="service-number">
+                        03
+                    </div>
+
+                    <div class="service-icon">
+                        ◆
+                    </div>
 
                     <h3>
                         تعامل احترافي
                     </h3>
 
                     <p>
-                        نسعى لتقديم تجربة تعامل
-                        سهلة وواضحة للعميل.
+                        نسعى لتقديم تجربة تعامل سهلة
+                        وواضحة للعميل.
                     </p>
 
-                </div>
+                    <span class="service-line"></span>
+
+                </article>
 
             </div>
 
@@ -610,91 +728,186 @@
 
                 <!-- FORM -->
 
-                <form id="contactForm">
+                <div class="contact-form-box">
 
-                    <input
-                        type="text"
-                        id="name"
-                        placeholder="الاسم"
-                        required>
+                    <div class="form-top">
 
-                    <input
-                        type="tel"
-                        id="phone"
-                        placeholder="رقم التليفون"
-                        required>
+                        <span>01</span>
 
-                    <input
-                        type="text"
-                        id="product"
-                        placeholder="المنتج المطلوب"
-                        required>
+                        <div>
+                            <strong>أرسل لنا رسالة</strong>
+                            <small>وسنتواصل معك عبر WhatsApp</small>
+                        </div>
 
-                    <textarea
-                        id="message"
-                        placeholder="اكتب رسالتك..."
-                        required></textarea>
-
-                    <button type="submit">
-                        إرسال عبر WhatsApp
-                        <span>←</span>
-                    </button>
-
-                </form>
+                    </div>
 
 
-                <!-- INFO -->
+                    <form id="contactForm">
+
+                        <div class="input-group">
+
+                            <label for="name">
+                                الاسم
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="اكتب اسمك"
+                                required>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="phone">
+                                رقم التليفون
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="01xxxxxxxxx"
+                                required>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="product">
+                                المنتج المطلوب
+                            </label>
+
+                            <input
+                                type="text"
+                                id="product"
+                                placeholder="مثال: مفصلات، عجل، كاوتش..."
+                                required>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="message">
+                                الرسالة
+                            </label>
+
+                            <textarea
+                                id="message"
+                                placeholder="اكتب رسالتك هنا..."
+                                required></textarea>
+
+                        </div>
+
+
+                        <button type="submit">
+
+                            <span>
+                                إرسال عبر WhatsApp
+                            </span>
+
+                            <b>←</b>
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                <!-- CONTACT INFO -->
 
                 <div class="contact-info">
 
-                    <span>EL-GHAD ALUMINUM</span>
+                    <div class="contact-info-label">
+                        EL-GHAD ALUMINUM
+                    </div>
 
                     <h3>
                         خلينا نساعدك
                     </h3>
 
                     <p>
-                        تواصل معنا من خلال أي وسيلة
-                        مناسبة ليك.
+                        لو محتاج منتج أو عندك أي استفسار،
+                        تواصل معنا من خلال أي وسيلة مناسبة ليك.
                     </p>
 
 
-                    <div class="contact-detail">
+                    <div class="contact-details">
 
-                        <small>PHONE</small>
 
-                        <a href="tel:01034224083">
-                            01034224083
-                        </a>
+                        <div class="contact-detail">
+
+                            <div class="detail-icon">
+                                ☎
+                            </div>
+
+                            <div>
+                                <small>PHONE</small>
+
+                                <a href="tel:01034224083">
+                                    01034224083
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-detail">
+
+                            <div class="detail-icon">
+                                @
+                            </div>
+
+                            <div>
+                                <small>EMAIL</small>
+
+                                <a href="mailto:elghad.aluminum@gmail.com">
+                                    elghad.aluminum@gmail.com
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-detail">
+
+                            <div class="detail-icon">
+                                ⌖
+                            </div>
+
+                            <div>
+                                <small>LOCATION</small>
+
+                                <a
+                                    href="https://maps.app.goo.gl/SUGSfYuRxxnyJsCo6"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    جسر السويس – القاهرة
+
+                                </a>
+                            </div>
+
+                        </div>
 
                     </div>
 
 
-                    <div class="contact-detail">
+                    <a
+                        class="location-button"
+                        href="https://maps.app.goo.gl/SUGSfYuRxxnyJsCo6"
+                        target="_blank"
+                        rel="noopener noreferrer">
 
-                        <small>EMAIL</small>
+                        <span>افتح موقعنا على الخريطة</span>
 
-                        <a href="mailto:elghad.aluminum@gmail.com">
-                            elghad.aluminum@gmail.com
-                        </a>
+                        <b>↗</b>
 
-                    </div>
-
-
-                    <div class="contact-detail">
-
-                        <small>LOCATION</small>
-
-                        <a
-                            href="https://maps.app.goo.gl/SUGSfYuRxxnyJsCo6"
-                            target="_blank"
-                            rel="noopener noreferrer">
-
-                            جسر السويس – القاهرة
-
-                        </a>
-
-                    </div>
+                    </a>
 
                 </div>
 
@@ -713,9 +926,12 @@
 
         <div class="footer-container">
 
+
             <div class="footer-brand">
 
-                <img src="logo.png" alt="EL-GHAD">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="EL-GHAD">
+                </div>
 
                 <div>
 
@@ -728,12 +944,26 @@
             </div>
 
 
+            <div class="footer-center">
+
+                <span>
+                    مستلزمات الألومنيوم
+                </span>
+
+                <small>
+                    جودة • تنوع • ثقة
+                </small>
+
+            </div>
+
+
             <div class="social-links">
 
                 <a
                     href="https://www.facebook.com/share/1EMwHKqVtN/"
                     target="_blank"
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer"
+                    aria-label="Facebook">
 
                     <img src="facebook.webp" alt="Facebook">
 
@@ -743,7 +973,8 @@
                 <a
                     href="https://wa.me/201034224083"
                     target="_blank"
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer"
+                    aria-label="WhatsApp">
 
                     <img src="whatsapp.webp" alt="WhatsApp">
 
@@ -753,7 +984,8 @@
                 <a
                     href="https://maps.app.goo.gl/SUGSfYuRxxnyJsCo6"
                     target="_blank"
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer"
+                    aria-label="Google Maps">
 
                     <img src="maps.webp" alt="Google Maps">
 
@@ -761,9 +993,13 @@
 
             </div>
 
+        </div>
+
+
+        <div class="footer-bottom">
 
             <p>
-                © 2026 EL-GHAD Aluminum
+                © 2026 EL-GHAD Aluminum — جميع الحقوق محفوظة
             </p>
 
         </div>
@@ -777,7 +1013,9 @@
 
     <script>
 
-        /* LOADER */
+        /* =========================
+           LOADER
+        ========================== */
 
         window.addEventListener("load", function () {
 
@@ -792,7 +1030,9 @@
         });
 
 
-        /* WHATSAPP FORM */
+        /* =========================
+           WHATSAPP FORM
+        ========================== */
 
         document
             .getElementById("contactForm")
