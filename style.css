@@ -1,3 +1,7 @@
+/* ================================
+   GLOBAL
+================================ */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,15 +14,15 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    background: #f3f6f3;
-    color: #151a16;
+    background: #f3f7f4;
+    color: #142019;
     line-height: 1.7;
 }
 
 
-/* =========================
+/* ================================
    NAVBAR
-========================= */
+================================ */
 
 .navbar {
     height: 80px;
@@ -28,14 +32,14 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    background: #0b2417;
+    background: #071b10;
     color: white;
 
     position: sticky;
     top: 0;
     z-index: 1000;
 
-    border-bottom: 1px solid #1f5c3b;
+    border-bottom: 1px solid #245f3b;
 }
 
 .logo {
@@ -50,7 +54,7 @@ body {
     font-size: 9px;
     letter-spacing: 4px;
 
-    color: #7fbf9a;
+    color: #83c99b;
 }
 
 nav {
@@ -64,17 +68,17 @@ nav a {
 
     font-size: 15px;
 
-    transition: .3s;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #55c982;
+    color: #45c96d;
 }
 
 
-/* =========================
+/* ================================
    HERO
-========================= */
+================================ */
 
 .hero {
     min-height: 90vh;
@@ -85,17 +89,17 @@ nav a:hover {
     padding: 100px 10%;
 
     background:
-        radial-gradient(
-            circle at 80% 20%,
-            #1d7046 0%,
-            transparent 30%
-        ),
         linear-gradient(
-            120deg,
-            #07160e 0%,
-            #0d2f1d 50%,
-            #124b2d 100%
-        );
+            90deg,
+            rgba(4, 24, 13, 0.94) 0%,
+            rgba(5, 40, 21, 0.78) 45%,
+            rgba(5, 40, 21, 0.38) 100%
+        ),
+        url("hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     color: white;
 }
@@ -109,7 +113,7 @@ nav a:hover {
 
     font-size: 13px;
 
-    color: #6fca91;
+    color: #63d486;
 
     margin-bottom: 20px;
 }
@@ -123,13 +127,13 @@ nav a:hover {
 }
 
 .hero h1 span {
-    color: #55c982;
+    color: #52d278;
 }
 
 .hero p {
     max-width: 600px;
 
-    color: #c8d8ce;
+    color: #d5e2d9;
 
     font-size: 18px;
 }
@@ -150,40 +154,38 @@ nav a:hover {
 
     font-weight: bold;
 
-    transition: .3s;
+    transition: 0.3s;
 
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 .primary {
-    background: #36a866;
+    background: #32ad5b;
     color: white;
 }
 
 .primary:hover {
-    background: #45c77a;
+    background: #43ca70;
 
     transform: translateY(-2px);
 }
 
 .secondary {
-    border: 1px solid #55c982;
+    border: 1px solid #62d486;
 
     color: white;
 }
 
 .secondary:hover {
-    background: #36a866;
+    background: #32ad5b;
 
-    border-color: #36a866;
-
-    color: white;
+    border-color: #32ad5b;
 }
 
 
-/* =========================
+/* ================================
    SECTIONS
-========================= */
+================================ */
 
 section {
     padding: 110px 8%;
@@ -201,13 +203,15 @@ section {
 
     letter-spacing: 4px;
 
-    color: #3d9560;
+    color: #329457;
 
     margin-bottom: 10px;
 }
 
 .section-title h2 {
     font-size: 48px;
+
+    color: #102219;
 }
 
 .section-title span {
@@ -215,12 +219,12 @@ section {
 }
 
 
-/* =========================
+/* ================================
    PRODUCTS
-========================= */
+================================ */
 
 .products {
-    background: #f3f6f3;
+    background: #f3f7f4;
 }
 
 .products-grid {
@@ -238,19 +242,19 @@ section {
 
     min-height: 300px;
 
-    border: 1px solid #dce6df;
+    border: 1px solid #dce7df;
 
-    border-top: 3px solid #36a866;
+    border-top: 3px solid #32ad5b;
 
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .product-card:hover {
     transform: translateY(-8px);
 
-    border-color: #36a866;
+    border-color: #32ad5b;
 
-    box-shadow: 0 15px 35px rgba(23, 74, 45, .12);
+    box-shadow: 0 15px 35px rgba(24, 91, 47, 0.12);
 }
 
 .product-icon {
@@ -258,7 +262,7 @@ section {
 
     margin-bottom: 25px;
 
-    color: #36a866;
+    color: #32ad5b;
 }
 
 .product-card h3 {
@@ -274,26 +278,26 @@ section {
 }
 
 .product-card a {
-    color: #197341;
+    color: #198143;
 
     text-decoration: none;
 
     font-weight: bold;
 
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .product-card a:hover {
-    color: #36a866;
+    color: #32ad5b;
 }
 
 
-/* =========================
+/* ================================
    ABOUT
-========================= */
+================================ */
 
 .about {
-    background: #0b2417;
+    background: #071b10;
 
     color: white;
 
@@ -315,11 +319,11 @@ section {
 }
 
 .about h2 span {
-    color: #55c982;
+    color: #52d278;
 }
 
 .about-text > p:not(.section-label) {
-    color: #b9cfc1;
+    color: #b8cfc0;
 
     max-width: 600px;
 
@@ -335,7 +339,7 @@ section {
 }
 
 .about-box div {
-    background: #123a24;
+    background: #10351f;
 
     padding: 30px;
 
@@ -343,25 +347,29 @@ section {
 
     justify-content: space-between;
 
-    border-right: 3px solid #36a866;
+    border-right: 3px solid #32ad5b;
 
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .about-box div:hover {
-    background: #174b2e;
+    background: #164a2a;
 }
 
 .about-box strong {
     font-size: 30px;
 
-    color: #55c982;
+    color: #52d278;
 }
 
 
-/* =========================
+/* ================================
    SERVICES
-========================= */
+================================ */
+
+.services {
+    background: white;
+}
 
 .services-grid {
     display: grid;
@@ -372,29 +380,29 @@ section {
 }
 
 .service {
-    background: white;
+    background: #f8faf8;
 
     padding: 45px;
 
-    border-top: 3px solid #36a866;
+    border-top: 3px solid #32ad5b;
 
-    border-left: 1px solid #e0e7e2;
+    border-left: 1px solid #e0e8e2;
 
-    border-right: 1px solid #e0e7e2;
+    border-right: 1px solid #e0e8e2;
 
-    border-bottom: 1px solid #e0e7e2;
+    border-bottom: 1px solid #e0e8e2;
 
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .service:hover {
     transform: translateY(-5px);
 
-    box-shadow: 0 12px 30px rgba(23, 74, 45, .1);
+    box-shadow: 0 12px 30px rgba(24, 91, 47, 0.1);
 }
 
 .service span {
-    color: #36a866;
+    color: #32ad5b;
 }
 
 .service h3 {
@@ -408,16 +416,16 @@ section {
 }
 
 
-/* =========================
+/* ================================
    CTA
-========================= */
+================================ */
 
 .cta {
     background:
         linear-gradient(
             120deg,
-            #0b2417,
-            #155b35
+            #071b10,
+            #155c35
         );
 
     color: white;
@@ -430,7 +438,7 @@ section {
 }
 
 .cta p {
-    color: #a9c7b4;
+    color: #aac7b5;
 }
 
 .cta h2 {
@@ -440,22 +448,22 @@ section {
 .light {
     background: white;
 
-    color: #0b2417;
+    color: #071b10;
 }
 
 .light:hover {
-    background: #55c982;
+    background: #52d278;
 
     color: white;
 }
 
 
-/* =========================
+/* ================================
    CONTACT
-========================= */
+================================ */
 
 .contact {
-    background: #f3f6f3;
+    background: #f3f7f4;
 }
 
 .contact-content {
@@ -471,7 +479,7 @@ section {
 
     margin-bottom: 20px;
 
-    color: #0b2417;
+    color: #071b10;
 }
 
 .contact-info p {
@@ -502,14 +510,14 @@ textarea {
 
     outline: none;
 
-    transition: .3s;
+    transition: 0.3s;
 }
 
 input:focus,
 textarea:focus {
-    border-color: #36a866;
+    border-color: #32ad5b;
 
-    box-shadow: 0 0 0 3px rgba(54, 168, 102, .1);
+    box-shadow: 0 0 0 3px rgba(50, 173, 91, 0.1);
 }
 
 textarea {
@@ -523,7 +531,7 @@ form button {
 
     border: none;
 
-    background: #0b2417;
+    background: #071b10;
 
     color: white;
 
@@ -533,20 +541,20 @@ form button {
 
     cursor: pointer;
 
-    transition: .3s;
+    transition: 0.3s;
 }
 
 form button:hover {
-    background: #36a866;
+    background: #32ad5b;
 }
 
 
-/* =========================
+/* ================================
    FOOTER
-========================= */
+================================ */
 
 footer {
-    background: #07160e;
+    background: #041109;
 
     color: white;
 
@@ -572,7 +580,7 @@ footer {
 
     letter-spacing: 4px;
 
-    color: #55c982;
+    color: #52d278;
 }
 
 footer p {
@@ -580,9 +588,9 @@ footer p {
 }
 
 
-/* =========================
+/* ================================
    RESPONSIVE
-========================= */
+================================ */
 
 @media (max-width: 900px) {
 
@@ -595,6 +603,14 @@ footer p {
     .about,
     .contact-content {
         grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 80vh;
+
+        padding: 80px 7%;
+
+        background-position: center;
     }
 
     .hero h1 {
@@ -615,5 +631,47 @@ footer p {
         gap: 20px;
 
         align-items: flex-start;
+    }
+}
+
+
+/* ================================
+   SMALL PHONES
+================================ */
+
+@media (max-width: 500px) {
+
+    section {
+        padding: 80px 6%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .section-title h2 {
+        font-size: 38px;
+    }
+
+    .about h2 {
+        font-size: 40px;
+    }
+
+    .cta h2 {
+        font-size: 35px;
     }
 }
