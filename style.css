@@ -599,12 +599,9 @@ section {
 
 .contact-content {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 70px;
-
-    direction: ltr;
+    direction: rtl;
 }
 
 .contact-info {
@@ -614,6 +611,7 @@ section {
 .contact-content form {
     direction: rtl;
 }
+
 
 .contact-info h3 {
     font-size: 30px;
