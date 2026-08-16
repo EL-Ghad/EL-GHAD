@@ -1,6 +1,6 @@
-/* =====================================================
+/* =========================
    RESET
-===================================================== */
+========================= */
 
 * {
     margin: 0;
@@ -31,9 +31,9 @@ textarea {
 }
 
 
-/* =====================================================
-   LOADING SCREEN
-===================================================== */
+/* =========================
+   LOADER
+========================= */
 
 #loader {
     position: fixed;
@@ -45,12 +45,7 @@ textarea {
     justify-content: center;
 
     background:
-        radial-gradient(
-            circle at center,
-            #123c24,
-            #06180d 55%,
-            #020804
-        );
+        radial-gradient(circle at center, #123c24, #06180d 55%, #020804);
 
     transition: opacity .8s ease, visibility .8s ease;
 }
@@ -128,22 +123,20 @@ textarea {
 }
 
 
-/* =====================================================
+/* =========================
    NAVBAR
-===================================================== */
+========================= */
 
 .navbar {
     position: sticky;
     top: 0;
     z-index: 1000;
 
-    background: rgba(3, 17, 9, .95);
+    background: rgba(3, 17, 9, .96);
 
     backdrop-filter: blur(18px);
 
-    border-bottom:
-        1px solid
-        rgba(82,210,120,.16);
+    border-bottom: 1px solid rgba(82,210,120,.16);
 }
 
 .nav-container {
@@ -170,14 +163,12 @@ textarea {
 .logo img {
     width: 48px;
     height: 48px;
-
     object-fit: contain;
 }
 
 .logo div {
     display: flex;
     flex-direction: column;
-
     line-height: 1;
 }
 
@@ -188,10 +179,8 @@ textarea {
 
 .logo span {
     color: #52d278;
-
     font-size: 8px;
     letter-spacing: 4px;
-
     margin-top: 5px;
 }
 
@@ -261,9 +250,9 @@ nav .nav-button:hover {
 }
 
 
-/* =====================================================
+/* =========================
    HERO
-===================================================== */
+========================= */
 
 .hero {
     position: relative;
@@ -326,9 +315,7 @@ nav .nav-button:hover {
 
     display: grid;
 
-    grid-template-columns:
-        1.05fr
-        .95fr;
+    grid-template-columns: 1.05fr .95fr;
 
     align-items: center;
 
@@ -336,9 +323,9 @@ nav .nav-button:hover {
 }
 
 
-/* =====================================================
+/* =========================
    HERO TEXT
-===================================================== */
+========================= */
 
 .hero-text {
     max-width: 700px;
@@ -378,7 +365,6 @@ nav .nav-button:hover {
 
 .hero-text h1 strong {
     color: #52d278;
-
     font-weight: 700;
 }
 
@@ -395,9 +381,9 @@ nav .nav-button:hover {
 }
 
 
-/* =====================================================
+/* =========================
    HERO BUTTONS
-===================================================== */
+========================= */
 
 .hero-buttons {
     display: flex;
@@ -433,19 +419,11 @@ nav .nav-button:hover {
 
 .btn-main:hover {
     background: #42c96d;
-
     transform: translateY(-3px);
 }
 
-.btn-main span {
-    font-size: 20px;
-}
-
 .btn-outline {
-    border:
-        1px solid
-        rgba(255,255,255,.35);
-
+    border: 1px solid rgba(255,255,255,.35);
     color: white;
 }
 
@@ -455,39 +433,35 @@ nav .nav-button:hover {
 }
 
 
-/* =====================================================
+/* =========================
    HERO FEATURES
-===================================================== */
+========================= */
 
 .hero-features {
     display: flex;
-
     gap: 45px;
 }
 
 .hero-features div {
     display: flex;
     flex-direction: column;
-
     gap: 3px;
 }
 
 .hero-features strong {
     color: #52d278;
-
     font-size: 14px;
 }
 
 .hero-features span {
     color: #a9bcaf;
-
     font-size: 12px;
 }
 
 
-/* =====================================================
+/* =========================
    HERO CARD
-===================================================== */
+========================= */
 
 .hero-card-area {
     position: relative;
@@ -518,9 +492,7 @@ nav .nav-button:hover {
 
     padding: 30px;
 
-    border:
-        1px solid
-        rgba(255,255,255,.17);
+    border: 1px solid rgba(255,255,255,.17);
 
     border-radius: 7px;
 
@@ -533,13 +505,9 @@ nav .nav-button:hover {
 
     backdrop-filter: blur(10px);
 
-    box-shadow:
-        0 30px 80px
-        rgba(0,0,0,.3);
+    box-shadow: 0 30px 80px rgba(0,0,0,.3);
 
-    transform:
-        perspective(1000px)
-        rotateY(-5deg);
+    transform: perspective(1000px) rotateY(-5deg);
 
     transition: .5s;
 }
@@ -572,9 +540,7 @@ nav .nav-button:hover {
 
     background: #52d278;
 
-    box-shadow:
-        0 0 15px
-        rgba(82,210,120,.8);
+    box-shadow: 0 0 15px rgba(82,210,120,.8);
 }
 
 .card-logo {
@@ -591,12 +557,6 @@ nav .nav-button:hover {
     height: 150px;
 
     object-fit: contain;
-
-    filter:
-        drop-shadow(
-            0 0 30px
-            rgba(82,210,120,.18)
-        );
 }
 
 .card-title small {
@@ -626,9 +586,7 @@ nav .nav-button:hover {
 
     padding-top: 20px;
 
-    border-top:
-        1px solid
-        rgba(255,255,255,.12);
+    border-top: 1px solid rgba(255,255,255,.12);
 
     display: flex;
 
@@ -657,14 +615,13 @@ nav .nav-button:hover {
 
 .card-number {
     color: #52d278;
-
     font-size: 30px;
 }
 
 
-/* =====================================================
+/* =========================
    SCROLL
-===================================================== */
+========================= */
 
 .scroll-down {
     position: absolute;
@@ -693,9 +650,9 @@ nav .nav-button:hover {
 }
 
 
-/* =====================================================
+/* =========================
    QUICK INFO
-===================================================== */
+========================= */
 
 .quick-info {
     position: relative;
@@ -703,8 +660,7 @@ nav .nav-button:hover {
 
     background: white;
 
-    border-bottom:
-        1px solid #e1e9e3;
+    border-bottom: 1px solid #e1e9e3;
 }
 
 .quick-container {
@@ -715,8 +671,7 @@ nav .nav-button:hover {
 
     display: grid;
 
-    grid-template-columns:
-        repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .quick-item {
@@ -730,8 +685,7 @@ nav .nav-button:hover {
 
     padding: 20px 25px;
 
-    border-left:
-        1px solid #e5ebe7;
+    border-left: 1px solid #e5ebe7;
 }
 
 .quick-item:last-child {
@@ -758,20 +712,17 @@ nav .nav-button:hover {
 
 .quick-item div {
     display: flex;
-
     flex-direction: column;
 }
 
 .quick-item small {
     color: #8b9b91;
-
     font-size: 10px;
 }
 
 .quick-item strong,
 .quick-item a {
     color: #16261d;
-
     font-size: 13px;
 }
 
@@ -780,9 +731,9 @@ nav .nav-button:hover {
 }
 
 
-/* =====================================================
+/* =========================
    SECTION HEADING
-===================================================== */
+========================= */
 
 .section-heading {
     text-align: center;
@@ -810,14 +761,14 @@ nav .nav-button:hover {
 
 .section-heading p {
     color: #718078;
-
     font-size: 15px;
 }
 
 
-/* =====================================================
+/* =========================
    PRODUCTS
-===================================================== */
+   الصورة أوضح
+========================= */
 
 .products {
     position: relative;
@@ -826,8 +777,8 @@ nav .nav-button:hover {
 
     background:
         linear-gradient(
-            rgba(245,248,246,.90),
-            rgba(245,248,246,.90)
+            rgba(245, 248, 246, .38),
+            rgba(245, 248, 246, .38)
         ),
         url("products-bg.png");
 
@@ -846,8 +797,7 @@ nav .nav-button:hover {
 
     display: grid;
 
-    grid-template-columns:
-        repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     gap: 18px;
 }
@@ -859,11 +809,9 @@ nav .nav-button:hover {
 
     padding: 35px;
 
-    background:
-        rgba(255,255,255,.94);
+    background: rgba(255,255,255,.94);
 
-    border:
-        1px solid #e1e9e3;
+    border: 1px solid #e1e9e3;
 
     overflow: hidden;
 
@@ -889,12 +837,9 @@ nav .nav-button:hover {
 .product-card:hover {
     transform: translateY(-7px);
 
-    border-color:
-        rgba(50,173,91,.3);
+    border-color: rgba(50,173,91,.3);
 
-    box-shadow:
-        0 20px 45px
-        rgba(20,70,40,.12);
+    box-shadow: 0 20px 45px rgba(20,70,40,.12);
 }
 
 .product-card:hover::before {
@@ -922,7 +867,6 @@ nav .nav-button:hover {
 
 .product-card h3 {
     font-size: 23px;
-
     margin-bottom: 10px;
 }
 
@@ -942,14 +886,11 @@ nav .nav-button:hover {
     font-weight: bold;
 }
 
-.product-card a span {
-    margin-right: 10px;
-}
 
-
-/* =====================================================
+/* =========================
    ABOUT
-===================================================== */
+   الصورة أوضح
+========================= */
 
 .about {
     position: relative;
@@ -960,8 +901,8 @@ nav .nav-button:hover {
 
     background:
         linear-gradient(
-            rgba(3,19,10,.88),
-            rgba(10,48,32,.92)
+            rgba(3, 19, 10, .48),
+            rgba(10, 48, 32, .55)
         ),
         url("about-bg.png");
 
@@ -980,9 +921,7 @@ nav .nav-button:hover {
 
     display: grid;
 
-    grid-template-columns:
-        1.2fr
-        .8fr;
+    grid-template-columns: 1.2fr .8fr;
 
     align-items: center;
 
@@ -1012,7 +951,7 @@ nav .nav-button:hover {
 .about-text p {
     max-width: 650px;
 
-    color: #bfd1c5;
+    color: #d3e2d8;
 
     line-height: 2;
 }
@@ -1026,8 +965,7 @@ nav .nav-button:hover {
 
     padding: 14px 25px;
 
-    border:
-        1px solid #52d278;
+    border: 1px solid #52d278;
 
     color: white;
 
@@ -1051,9 +989,7 @@ nav .nav-button:hover {
 
     justify-content: space-between;
 
-    border-bottom:
-        1px solid
-        rgba(255,255,255,.12);
+    border-bottom: 1px solid rgba(255,255,255,.18);
 }
 
 .about-stats strong {
@@ -1063,13 +999,13 @@ nav .nav-button:hover {
 }
 
 .about-stats span {
-    color: #d5e3da;
+    color: #e0ebe4;
 }
 
 
-/* =====================================================
+/* =========================
    SERVICES
-===================================================== */
+========================= */
 
 .services {
     padding: 120px 8%;
@@ -1085,8 +1021,7 @@ nav .nav-button:hover {
 
     display: grid;
 
-    grid-template-columns:
-        repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     gap: 20px;
 }
@@ -1094,8 +1029,7 @@ nav .nav-button:hover {
 .service-card {
     padding: 40px;
 
-    border:
-        1px solid #e0e8e2;
+    border: 1px solid #e0e8e2;
 
     background: #fafcfb;
 
@@ -1127,9 +1061,11 @@ nav .nav-button:hover {
 }
 
 
-/* =====================================================
+/* =========================
    CONTACT
-===================================================== */
+   النموذج شمال
+   المعلومات يمين
+========================= */
 
 .contact {
     padding: 120px 8%;
@@ -1145,10 +1081,7 @@ nav .nav-button:hover {
 
     display: grid;
 
-    /* النموذج شمال — معلومات التواصل يمين */
-    grid-template-columns:
-        1fr
-        1fr;
+    grid-template-columns: 1fr 1fr;
 
     gap: 80px;
 
@@ -1156,7 +1089,7 @@ nav .nav-button:hover {
 }
 
 
-/* FORM LEFT */
+/* FORM - LEFT */
 
 .contact-container form {
     direction: rtl;
@@ -1169,7 +1102,7 @@ nav .nav-button:hover {
 }
 
 
-/* INFO RIGHT */
+/* INFO - RIGHT */
 
 .contact-info {
     direction: rtl;
@@ -1202,8 +1135,7 @@ nav .nav-button:hover {
 .contact-detail {
     padding: 18px 0;
 
-    border-bottom:
-        1px solid #dce5df;
+    border-bottom: 1px solid #dce5df;
 
     display: flex;
 
@@ -1229,14 +1161,15 @@ nav .nav-button:hover {
 }
 
 
-/* FORM INPUTS */
+/* =========================
+   FORM INPUTS
+========================= */
 
 form input,
 form textarea {
     width: 100%;
 
-    border:
-        1px solid #d7e1da;
+    border: 1px solid #d7e1da;
 
     background: white;
 
@@ -1253,9 +1186,7 @@ form input:focus,
 form textarea:focus {
     border-color: #32ad5b;
 
-    box-shadow:
-        0 0 0 3px
-        rgba(50,173,91,.08);
+    box-shadow: 0 0 0 3px rgba(50,173,91,.08);
 }
 
 form textarea {
@@ -1284,14 +1215,10 @@ form button:hover {
     background: #32ad5b;
 }
 
-form button span {
-    margin-right: 15px;
-}
 
-
-/* =====================================================
+/* =========================
    FOOTER
-===================================================== */
+========================= */
 
 footer {
     background: #030b06;
@@ -1366,12 +1293,9 @@ footer {
 
     border-radius: 50%;
 
-    border:
-        1px solid
-        rgba(82,210,120,.2);
+    border: 1px solid rgba(82,210,120,.2);
 
-    background:
-        rgba(255,255,255,.05);
+    background: rgba(255,255,255,.05);
 
     transition: .3s;
 }
@@ -1381,8 +1305,7 @@ footer {
 
     border-color: #52d278;
 
-    background:
-        rgba(82,210,120,.12);
+    background: rgba(82,210,120,.12);
 }
 
 .social-links img {
@@ -1399,9 +1322,9 @@ footer {
 }
 
 
-/* =====================================================
-   RESPONSIVE - TABLET
-===================================================== */
+/* =========================
+   TABLET
+========================= */
 
 @media (max-width: 1000px) {
 
@@ -1432,19 +1355,12 @@ footer {
     }
 
     .quick-container {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-
-    .quick-item {
-        border-bottom:
-            1px solid #e5ebe7;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .products-grid,
     .services-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .about-container {
@@ -1465,9 +1381,9 @@ footer {
 }
 
 
-/* =====================================================
-   RESPONSIVE - MOBILE
-===================================================== */
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 650px) {
 
@@ -1530,8 +1446,7 @@ footer {
     .quick-item {
         border-left: none;
 
-        border-bottom:
-            1px solid #e5ebe7;
+        border-bottom: 1px solid #e5ebe7;
     }
 
     .products-grid,
