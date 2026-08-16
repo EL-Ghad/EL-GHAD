@@ -1,7 +1,7 @@
 /* =========================================================
    EL-GHAD ALUMINUM
    MODERN PREMIUM DESIGN
-   V2 — BETTER TEXT VISIBILITY + RESPONSIVE TYPOGRAPHY
+   V3 — PRODUCT BUTTON UPGRADE
 ========================================================= */
 
 :root {
@@ -1015,7 +1015,7 @@ nav .nav-button:hover {
 
     color: #9bb0a2;
 
-    font-size: 0.7rem;
+    font-size: clamp(0.7rem, 0.8vw, 0.9rem);
 
     font-weight: 600;
 
@@ -1268,7 +1268,9 @@ nav .nav-button:hover {
 }
 
 
-/* PRODUCT CARD */
+/* =========================================================
+   PRODUCT CARD
+========================================================= */
 
 .product-card {
     position: relative;
@@ -1353,7 +1355,9 @@ nav .nav-button:hover {
 }
 
 
-/* PRODUCT TOP */
+/* =========================================================
+   PRODUCT TOP
+========================================================= */
 
 .product-top {
     display: flex;
@@ -1404,7 +1408,9 @@ nav .nav-button:hover {
 }
 
 
-/* PRODUCT CONTENT */
+/* =========================================================
+   PRODUCT CONTENT
+========================================================= */
 
 .product-content h3 {
     margin-bottom: 10px;
@@ -1427,7 +1433,10 @@ nav .nav-button:hover {
 }
 
 
-/* PRODUCT LINK */
+/* =========================================================
+   PRODUCT BUTTON
+   SAME STYLE AS CONTACT BUTTON
+========================================================= */
 
 .product-card > a {
     position: absolute;
@@ -1435,27 +1444,79 @@ nav .nav-button:hover {
     right: 30px;
     bottom: 28px;
 
-    display: flex;
+    min-width: 150px;
+    min-height: 46px;
+
+    padding: 10px 17px;
+
+    display: inline-flex;
 
     align-items: center;
+    justify-content: center;
 
-    gap: 14px;
+    gap: 13px;
 
     color: var(--green-dark);
 
+    background:
+        rgba(57,197,106,.06);
+
+    border:
+        1px solid rgba(57,197,106,.60);
+
+    border-radius: 7px;
+
     font-size: 0.95rem;
 
-    font-weight: bold;
+    font-weight: 700;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.product-card > a span {
+    position: relative;
+    z-index: 2;
 }
 
 .product-card > a b {
+    position: relative;
+    z-index: 2;
+
     font-size: 1.2rem;
 
-    transition: .3s;
+    line-height: 1;
+
+    transition:
+        transform .3s ease;
 }
 
-.product-card:hover > a b {
-    transform: translateX(-5px);
+
+/* BUTTON HOVER */
+
+.product-card > a:hover {
+    color: white;
+
+    background:
+        var(--green);
+
+    border-color:
+        var(--green);
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(57,197,106,.22);
+}
+
+.product-card > a:hover b {
+    transform:
+        translateX(-5px);
 }
 
 
@@ -2599,7 +2660,7 @@ footer {
 
         white-space: nowrap;
 
-        font-size: 0.65rem;
+        font-size: 0.7rem;
     }
 
 
@@ -2659,6 +2720,26 @@ footer {
 
     .product-card {
         min-height: 310px;
+    }
+
+    /* PRODUCT BUTTON MOBILE */
+
+    .product-card > a {
+        right: 24px;
+        bottom: 24px;
+
+        min-width: 140px;
+        min-height: 44px;
+
+        padding: 9px 15px;
+
+        font-size: 0.9rem;
+
+        gap: 10px;
+    }
+
+    .product-card > a b {
+        font-size: 1.1rem;
     }
 
 
@@ -2765,14 +2846,21 @@ footer {
     .section-heading h2 {
         font-size: 2.15rem;
     }
+
+    .product-card > a {
+        right: 20px;
+        bottom: 20px;
+
+        min-width: 135px;
+
+        font-size: 0.86rem;
+    }
 }
 
 
 /* =========================================================
    ACCESSIBILITY / TEXT CLARITY
 ========================================================= */
-
-/* منع النصوص من أن تصبح صغيرة جدًا */
 
 .loader-box small,
 .loader-box p,
@@ -2785,7 +2873,10 @@ footer {
     font-size: clamp(0.7rem, 0.8vw, 0.9rem);
 }
 
-/* تحسين تحديد النص */
+
+/* =========================================================
+   TEXT SELECTION
+========================================================= */
 
 ::selection {
     background: var(--green);
