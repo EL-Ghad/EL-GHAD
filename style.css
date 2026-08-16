@@ -1,7 +1,7 @@
 /* =========================================================
    EL-GHAD ALUMINUM
    MODERN PREMIUM DESIGN
-   V3 — PRODUCT BUTTON UPGRADE
+   V3 — IMPROVED PRODUCT LINK HOVER
 ========================================================= */
 
 :root {
@@ -1015,7 +1015,7 @@ nav .nav-button:hover {
 
     color: #9bb0a2;
 
-    font-size: clamp(0.7rem, 0.8vw, 0.9rem);
+    font-size: 0.7rem;
 
     font-weight: 600;
 
@@ -1434,89 +1434,89 @@ nav .nav-button:hover {
 
 
 /* =========================================================
-   PRODUCT BUTTON
-   SAME STYLE AS CONTACT BUTTON
+   PRODUCT LINK — FULL HOVER
 ========================================================= */
 
 .product-card > a {
     position: absolute;
 
     right: 30px;
-    bottom: 28px;
-
-    min-width: 150px;
-    min-height: 46px;
-
-    padding: 10px 17px;
+    bottom: 25px;
 
     display: inline-flex;
 
     align-items: center;
     justify-content: center;
 
-    gap: 13px;
+    gap: 14px;
+
+    padding: 9px 13px;
 
     color: var(--green-dark);
 
-    background:
-        rgba(57,197,106,.06);
-
-    border:
-        1px solid rgba(57,197,106,.60);
+    border: 1px solid transparent;
 
     border-radius: 7px;
 
+    background: transparent;
+
     font-size: 0.95rem;
 
-    font-weight: 700;
+    font-weight: bold;
 
     transition:
-        background .3s ease,
         color .3s ease,
+        background .3s ease,
         border-color .3s ease,
         transform .3s ease,
         box-shadow .3s ease;
 }
 
+
+/* الكلمة نفسها */
+
 .product-card > a span {
-    position: relative;
-    z-index: 2;
+    transition: color .3s ease;
 }
 
-.product-card > a b {
-    position: relative;
-    z-index: 2;
 
+/* السهم */
+
+.product-card > a b {
     font-size: 1.2rem;
 
     line-height: 1;
 
     transition:
-        transform .3s ease;
+        transform .3s ease,
+        color .3s ease;
 }
 
 
-/* BUTTON HOVER */
+/* =========================================================
+   WHEN MOUSE IS ON "اطلب المنتج" OR ARROW
+========================================================= */
 
 .product-card > a:hover {
     color: white;
 
-    background:
-        var(--green);
+    background: var(--green);
 
-    border-color:
-        var(--green);
+    border-color: var(--green);
 
-    transform:
-        translateY(-3px);
+    transform: translateY(-2px);
 
     box-shadow:
-        0 10px 25px rgba(57,197,106,.22);
+        0 8px 20px rgba(57,197,106,.20);
 }
 
+
+/* السهم يتحرك مع الكلمة */
+
 .product-card > a:hover b {
-    transform:
-        translateX(-5px);
+    color: white;
+
+    transform: translateX(-5px);
 }
 
 
@@ -2660,7 +2660,7 @@ footer {
 
         white-space: nowrap;
 
-        font-size: 0.7rem;
+        font-size: 0.65rem;
     }
 
 
@@ -2722,24 +2722,13 @@ footer {
         min-height: 310px;
     }
 
-    /* PRODUCT BUTTON MOBILE */
-
     .product-card > a {
-        right: 24px;
-        bottom: 24px;
+        right: 22px;
+        bottom: 22px;
 
-        min-width: 140px;
-        min-height: 44px;
-
-        padding: 9px 15px;
+        padding: 9px 12px;
 
         font-size: 0.9rem;
-
-        gap: 10px;
-    }
-
-    .product-card > a b {
-        font-size: 1.1rem;
     }
 
 
@@ -2845,15 +2834,6 @@ footer {
 
     .section-heading h2 {
         font-size: 2.15rem;
-    }
-
-    .product-card > a {
-        right: 20px;
-        bottom: 20px;
-
-        min-width: 135px;
-
-        font-size: 0.86rem;
     }
 }
 
